@@ -75,7 +75,7 @@ if response != "":
                     for key, value in data.items():
                         if key in cell.text:
                             if value == "false":
-                               if(str(key).startswith("{{Check")):
+                                if(str(key).startswith("{{Check")):
                                     cell.text = cell.text.replace(key, " ☐")
                                 else:
                                     cell.text = cell.text.replace(key, value)
