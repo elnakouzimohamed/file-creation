@@ -33,7 +33,7 @@ if not st.session_state.authenticated:
 
 st.title("File Filler 🤖")
 selected_form = st.selectbox("Select a Form:", list(form_data.keys()), index=0)
-user_input = st.text_area("Enter The Prompt:", height=200)
+user_input = st.text_area("Enter The Prompt:", height=250)
 response = ""
 if st.button("Fill Form"):
     if user_input.strip():
