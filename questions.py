@@ -1,12 +1,7 @@
 form_data = {
-    "Form1": {
-        "What is the name?": "{Name}",
-        "What is the age?": "{age}",
-        "What is the department?": "{department}"
-    },
     "Form2": {
-        "Date of session": "{{date_session}}",
-        "Location of Session": "{{location}}",
+        "{{date_session}}": "Date of session",
+        "{{location}}":"Location of Session",
         "Who referred/identified the person": {
             "{{Check_1}}": "Referral from another organization",
             "{{Check_2}}": "Family, neighbor or community member",
@@ -15,14 +10,14 @@ form_data = {
             "{{Check_5}}": "Community volunteer/focal point",
             "{{specify_id}}": "Other (specify)"
         },
-        "Date of identification": "{{date_id}}",
+        "{{date_id}}":"Date of identification",
         "Do you need any support to take part in this meeting?": {
             "{{Check_7}}": "Yes",
             "{{Check_8}}": "No"
         },
-        "Note down support required and what has been put in place": "{{support_details}}",
-        "Case Code": "{{case_code}}",
-        "Date of Birth": "{{date_of_birth}}",
+         "{{support_details}}":"Note down support required and what has been put in place",
+        "{{case_code}}":"Case Code" ,
+        "{{date_of_birth}}":"Date of Birth" ,
         "Gender": {
             "{{Check_9}}": "Male",
             "{{Check_10}}": "Female",
@@ -103,9 +98,9 @@ form_data = {
             "{{Check_60}}": "Yes",
             "{{Check_61}}": "No"
         },
-        "What is the name of the caregiver/s?": "{{caregiver_name}}",
-        "What is your relationship to them?": "{{caregiver_relationship}}",
-        "Can you tell me what brought you here today?": "{{reason_of_coming}}",
+        "{{caregiver_name}}":"What is the name of the caregiver/s?",
+        "{{caregiver_relationship}}":"What is your relationship to them?",
+        "{{reason_of_coming}}": "Can you tell me what brought you here today?",
         "Can you explain whether you have any immediate medical, physical or emotional needs?": {
             "{{Check_62}}": "Yes",
             "{{needs}}": "Briefly explain the needs",
@@ -113,38 +108,38 @@ form_data = {
         },
         "Do you feel safe within your community and/or the location you currently live?": {
             "{{Check_64}}": "Yes, feeling safe",
-            "{{Check_65}}": "No, feeling unsafe"
+            "{{Check_65}}": "No, feeling unsafe",
+            "{{explain_1}}": "Explain what makes you feel safe or unsafe"
         },
-        "Explain what makes you feel safe or unsafe": "{{explain_1}}",
         "Do you feel safe in your home?": {
             "{{Check_66}}": "Yes, feeling safe",
-            "{{Check_67}}": "No, feeling unsafe"
+            "{{Check_67}}": "No, feeling unsafe",
+            "{{explain_2}}":"Explain what makes you feel safe or unsafe (home)"
         },
-        "Explain what makes you feel safe or unsafe (home)": "{{explain_2}}",
-        "Can you tell me about any people or groups that are particularly significant in your life?": "{{significant_people}}",
+        "{{significant_people}}": "Can you tell me about any people or groups that are particularly significant in your life?",
         "Do you feel that some of these people or groups are able to support you?": {
             "{{Check_68}}": "Yes",
-            "{{Check_69}}": "No"
+            "{{Check_69}}": "No",
+            "{{explain_3}}": "Explain"
         },
-        "Explain": "{{explain_3}}",
         "Do you participate in and contribute to decisions that affect you in the home and community?": {
             "{{Check_70}}": "Yes",
-            "{{Check_71}}": "No"
+            "{{Check_71}}": "No",
+            "{{explain_4}}": "Explain participation in decision-making"
         },
-        "Explain participation in decision-making": "{{explain_4}}",
         "Do you have access to available services on an equal basis with others?": {
             "{{Check_72}}": "Yes",
-            "{{Check_73}}": "No"
+            "{{Check_73}}": "No",
+            "{{explain_5}}":"Explain access to services" 
         },
-        "Explain access to services": "{{explain_5}}",
-        "Can you summarize the key concerns that worry you the most?": "{{key_concerns}}",
-        "What steps have you taken to try to resolve these concerns?": "{{resolve_concerns}}",
-        "What worked well and what did not?": "{{what_worked_and_not}}",
+        "{{key_concerns}}":"Can you summarize the key concerns that worry you the most?",
+        "{{resolve_concerns}}": "What steps have you taken to try to resolve these concerns?",
+        "{{what_worked_and_not}}": "What worked well and what did not?",
         "Do you or other members of the family have work or an income of any kind at the moment?": {
             "{{Check_74}}": "Yes",
-            "{{Check_75}}": "No"
+            "{{Check_75}}": "No",
+            "{{explain_6}}":"Explain work or income situation"
         },
-        "Explain work or income situation": "{{explain_6}}",
         "Vulnerability Profile": {
             "{{Check_109}}": "Person with Disability",
             "{{Check_110}}": "Older person at-risk",
@@ -156,10 +151,7 @@ form_data = {
             "{{Check_114}}": "Medium Risk",
             "{{Check_115}}": "High Risk"
         }
-    }
-
-
-,
+    },
     
     "Form3": {
         "{{staff_code}}": "Staff Code",
@@ -263,8 +255,4 @@ form_data = {
         },
         "{{housing_situation}}": "Comment/observation on housing situation"
     }
-
-,
-    "Form4": {"Name": "Emily Johnson", "Age": 22, "Department": "Finance"},
-    "Form5": {"Name": "Michael Lee", "Age": 35, "Department": "IT"},
 }
