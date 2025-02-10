@@ -40,7 +40,7 @@ if st.button("Generate Response"):
 
 
 # Load the existing Word form
-doc = Document("trial1.docx")
+#doc = Document("trial1.docx")
 word_docs = {
     "Form1": "form1.docx",
     "Form2": "form2.docx",
@@ -50,7 +50,7 @@ word_docs = {
     "Form6": "form6.docx",
 }
 print(response)
-doc = Document(word_docs.get(selected_form))
+doc=Document(word_docs.get(selected_form))
 data = {}
 # Dictionary of values to replace placeholders
 if response != "":
