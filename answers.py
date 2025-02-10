@@ -97,6 +97,7 @@ formAnswer={
         "{{Check_74}}": "answer",
         "{{Check_75}}": "answer",
         "{{explain_6}}": "answer",
+        "{{violation_type}}": "answer",
         "{{Check_76}}": "answer",
         "{{Check_77}}": "answer",
         "{{Check_78}}": "answer",
