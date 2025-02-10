@@ -303,6 +303,159 @@ form_data = {
             "{{Check_55}}": "Other",
             "{{explain_5}}": "Specify if other"
         },
-        "{{housing_situation}}": "Comment/observation on housing situation"
+        "{{housing_situation}}": "Comment/observation on housing situation",
+        "Do you experience any difficulties accessing your daily food and/or water needs?": {
+            "{{Check_56}}": "Yes",
+            "{{explain_6}}": "Explain",
+            "{{Check_57}}": "No"
+        },
+        "Do you experience any challenges hindering access to basic services?": {
+            "{{Check_58}}": "Yes",
+            "{{explain_7}}": "Explain",
+            "{{Check_59}}": "No"
+        },
+        "What type of barriers are you experiencing?": {
+            "{{Check_60}}": "Physical barriers in buildings",
+            "{{Check_61}}": "Inaccessible transportation",
+            "{{Check_62}}": "Lack of accessible communication means",
+            "{{Check_63}}": "Exclusion from services",
+            "{{Check_64}}": "Financial barriers",
+            "{{Check_65}}": "Service unavailable",
+            "{{check_66}}": "Other",
+            "{{explain_8}}": "Specify if other"
+        },
+        "Do you currently receive any assistance from other organizations?": {
+            "{{Check_67}}": "Yes",
+            "{{explain_9}}": "Explain",
+            "{{Check_68}}": "No",
+        },
+        "If you receive assistance, what type is it?": {
+            "{{Check_69}}": "Cash for rent",
+            "{{Check_70}}": "MCAP",
+            "{{Check_71}}": "PCAP (1&2)",
+            "{{Check_72}}": "PCAP 3",
+            "{{Check_73}}": "CFP",
+            "{{Check_74}}": "ECA",
+            "{{Check_75}}": "In-kind",
+            "{{specify_inkind}}": "If in-kind, specify",
+            "{{Check_76}}": "Other",
+            "{{specify_other}}": "If other, specify",
+        },
+        "Do you/your Household have any income?": {
+            "{{Check_77}}": "Yes",
+            "{{Check_78}}": "No",
+        },
+        "{{explain_10}}": "Explain income",
+        "{{income_source}}": "Income source",
+        "Do you have control over the use of your income?": {
+            "{{Check_79}}": "Yes",
+            "{{Check_80}}": "No",
+        },
+        "{{explain_11}}": "Explain income control",
+        "Do you feel your material needs are met?": {
+            "{{Check_81}}": "Yes",
+            "{{Check_82}}": "No",
+        },
+        "{{explain_12}}": "Explain material needs",
+        "Has there been a sudden change in income in the past 30 days?": {
+            "{{Check_83}}": "Yes",
+            "{{explain_13}}": "Explain",
+            "{{Check_84}}": "No",
+        },
+        "Do you have any health concerns?": {
+            "{{Check_85}}": "No",
+            "{{Check_86}}": "Yes",
+        },
+        "{{explain_14}}": "Explain health concerns",
+        "Do you receive any treatment or support?": {
+            "{{Check_87}}": "No",
+            "{{Check_88}}": "Yes",
+        },
+        "{{received_treatment}}": "If yes, who is providing treatment?",
+        "Do you need support to take care of yourself?": {
+            "{{Check_89}}": "No",
+            "{{Check_90}}": "Yes",
+        },
+        "{{selfcare_support}}": "If yes, who provides this support?",
+        "Does your household give you the support you need?": {
+            "{{Check_91}}": "Yes",
+            "{{Check_92}}": "No",
+            "{{explain_15}}": "Explain household support",
+        },
+        "Had little interest or pleasure in doing things": {
+            "{{Check_93}}": "Not at all",
+            "{{Check_94}}": "Several days",
+            "{{Check_95}}": "More than half the days",
+            "{{Check_96}}": "Nearly every day",
+        },
+        "Been feeling down, depressed or hopeless": {
+            "{{Check_97}}": "Not at all",
+            "{{Check_98}}": "Several days",
+            "{{Check_99}}": "More than half the days",
+            "{{Check_100}}": "Nearly every day",
+        },
+        "Had trouble falling/staying asleep or are sleeping too much": {
+            "{{Check_101}}": "Not at all",
+            "{{Check_102}}": "Several days",
+            "{{Check_103}}": "More than half the days",
+            "{{Check_104}}": "Nearly every day",
+        },
+        "Been feeling tired or having little energy": {
+            "{{Check_105}}": "Not at all",
+            "{{Check_106}}": "Several days",
+            "{{Check_107}}": "More than half the days",
+            "{{Check_108}}": "Nearly every day",
+        },
+        "Had poor appetite or overate": {
+            "{{Check_109}}": "Not at all",
+            "{{Check_110}}": "Several days",
+            "{{Check_111}}": "More than half the days",
+            "{{Check_112}}": "Nearly every day",
+        },
+        "Feeling bad about yourself or that you are a failure": {
+            "{{Check_113}}": "Not at all",
+            "{{Check_114}}": "Several days",
+            "{{Check_115}}": "More than half the days",
+            "{{Check_116}}": "Nearly every day",
+        },
+        "Had trouble concentrating on things": {
+            "{{Check_117}}": "Not at all",
+            "{{Check_118}}": "Several days",
+            "{{Check_119}}": "More than half the days",
+            "{{Check_120}}": "Nearly every day",
+        },
+        "Been moving or speaking slowly or feeling restless": {
+            "{{Check_121}}": "Not at all",
+            "{{Check_122}}": "Several days",
+            "{{Check_123}}": "More than half the days",
+            "{{Check_124}}": "Nearly every day",
+        },
+        "Had thoughts that you would be better off dead or of hurting yourself": {
+            "{{Check_125}}": "Not at all",
+            "{{Check_126}}": "Several days",
+            "{{Check_127}}": "More than half the days",
+            "{{Check_128}}": "Nearly every day",
+        },
+        "How difficult have these problems made it for you?": {
+            "{{Check_129}}": "Not difficult at all",
+            "{{Check_130}}": "Somewhat difficult",
+            "{{Check_131}}": "Very difficult",
+            "{{Check_132}}": "Extremely difficult",
+        },
+        "{{protection_risk}}": "Protection Risk",
+        "Current risk level": {
+            "{{Check_133}}": "High",
+            "{{Check_134}}": "Medium",
+        },
+        "{{threats}}": "Threats",
+        "{{vulnerabilities}}": "Vulnerabilities",
+        "{{personal_strengths}}": "Personal Strengths",
+        "{{family_support}}": "Family/Community Support",
+        "{{most_worrying_about}}": "PoC Summary",
+        "{{suggestions}}": "Suggestions",
+        "{{summary}}": "Caseworker Summary",
+        "{{ex_protection_outcome}}": "Expected Protection Outcome",
     }
 }
+
+
