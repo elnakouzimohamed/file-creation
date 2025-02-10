@@ -6,58 +6,45 @@ from answers import formAnswer
 from questions import form_data
 import os
 
-# Gemini API Key
-genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
-APP_PASSWORD = "Trabolsi#DRC"
-
-# Initialize authentication state
-if "authenticated" not in st.session_state:
-    st.session_state.authenticated = False
-
-# Authentication UI
-if not st.session_state.authenticated:
-    st.title("🔒 Enter Password")
-    password = st.text_input("Password:", type="password")
-    
-    if st.button("Login"):
-        if password == APP_PASSWORD:
-            st.session_state.authenticated = True
-            st.rerun()  # Use st.rerun() instead of st.experimental_rerun()
-        else:
-            st.error("Incorrect password. Try again.")
-    
-    st.stop()  # Stop execution if not authenticated
-
-
-# Function to get response from Gemini API
 def get_gemini_response(prompt):
     model = genai.GenerativeModel("gemini-pro")
     response = model.generate_content(prompt)
     return response.text
 
-# Streamlit UI
+def find_missing_keys(form1, form2):
+    return list(set(form1.keys()) - set(form2.keys()))
+
+genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
+
+APP_PASSWORD = "Trabolsi#DRC"
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+if not st.session_state.authenticated:
+    st.title("🔒 Enter Password")
+    password = st.text_input("Password:", type="password")
+    if st.button("Login"):
+        if password == APP_PASSWORD:
+            st.session_state.authenticated = True
+            st.rerun()
+        else:
+            st.error("Incorrect password. Try again.")
+    st.stop()
+
+
 st.title("File Filler 🤖")
-
-# User input
 selected_form = st.selectbox("Select a Form:", list(form_data.keys()), index=0)
-
 user_input = st.text_area("Enter The Prompt:", height=150)
 response = ""
 if st.button("Fill Form"):
     if user_input.strip():
         with st.spinner("Preparing your file..."):
             query = "For the given prompt:"+user_input+ ", analyze then answer the questions of the following dictionary: " +json.dumps(form_data.get(selected_form)) + ", and fill this dictionary with the correct answers: "+ json.dumps(formAnswer.get(selected_form)) + " and the answer of {{checks}} is either 'true' or 'false', if you do not know if it is true or false then put 'false'. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA instead, however for {{checks}} like {{check_14}} put 'false' if you do not know or have an answer, and never put 'true' or 'false' for anything except {{checks}}, for example: {{reunification}}:'no' instead of {{reunification}}:'false'. Give me the result directly in json format with nothing written before or after and DO NOT SKIP AN ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 100 characters. Give me the result directly in json format as a string with nothing written before or after!"
-            
-            #  "For the given prompt  "+user_input+ "Answer the questions of the following dictionary: " +json.dumps(form_data.get(selected_form)) + " and fill this dictionary with the correct answers: "+ json.dumps(formAnswer.get(selected_form)) + ", and the answer of {{checks}} is either 'true' or 'false', and lowercase only. Make sure to fill all the fields of the given sample, if there exist a question that you can't answer just leave it as an 'empty string' and never null. Give me the result directly in json format with nothing written before or after."
             response = get_gemini_response(query)
         st.write("**Gemini AI Response:**")
         st.write(response)
     else:
         st.warning("Please enter a valid prompt!")
 
-
-# Load the existing Word form
-# doc = Document("trial1.docx")
 word_docs = {
     "Form1": "form1.docx",
     "Form2": "form2.docx",
@@ -74,16 +61,29 @@ data = {}
 if response != "":
     try:
         data = json.loads(response)
-        print(data,type(data))
+        
+        missing_keys = find_missing_keys(formAnswer.get(selected_form), data)
+        for key in missing_keys:
+            if str(key).startswith("{{Check"):
+                data[key] = " ☐"
+            else:
+                data[key] = " "
+                
         for table in doc.tables:
             for row in table.rows:
                 for cell in row.cells:
                     for key, value in data.items():
                         if key in cell.text:
                             if value == "false":
-                               cell.text = cell.text.replace(key, " ☐") 
+                               if(str(key).startswith("{{Check")):
+                                    cell.text = cell.text.replace(key, " ☐")
+                                else:
+                                    cell.text = cell.text.replace(key, value)
                             elif value == "true":
-                                cell.text = cell.text.replace(key, " ☑") 
+                                if(str(key).startswith("{{Check")):
+                                    cell.text = cell.text.replace(key, " ☑")
+                                else:
+                                    cell.text = cell.text.replace(key, value)
                             elif value == "NA":
                                 cell.text = cell.text.replace(key, " ")
                             else:
@@ -91,7 +91,7 @@ if response != "":
 
         file_path = f"{selected_form}_filled.docx"
         filled = doc.save(file_path)
-        print("✅ The form is successfully filled!")
+        st.write("✅ The form is successfully filled!")
         with open(file_path, "rb") as file:
             btn = st.download_button(
                 label="📄 Download Filled Word Document",
