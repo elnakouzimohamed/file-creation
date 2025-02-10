@@ -2,8 +2,8 @@ import streamlit as st
 import google.generativeai as genai
 from docx import Document
 import json
-from answers import formAnswer
-from questions import form_data
+from answers.py import formAnswer
+from questions.py import form_data
 import os
 # Set your API Key
 genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
