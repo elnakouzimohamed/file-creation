@@ -140,6 +140,56 @@ form_data = {
             "{{Check_75}}": "No",
             "{{explain_6}}":"Explain work or income situation"
         },
+        "Type of violation?": "{{violation_type}}",
+        "Torture, inhumane, cruel or degrading treatment or punishment (including physical and psychological violence Note: All cases of rape, sexual assault, physical assault or abuse, forced marriage, denial of resources, opportunities or services, psychological and/or emotional abuse for women, girls and boys, should be referred for GBV or child protection case management": {
+            "{{Check_76}}": "Torture",
+            "{{Check_77}}": "Other inhumane, cruel or degrading treatment or punishment",
+            "{{Check_78}}":"Physical and psychological violence, including assault, abuse or severe neglect"
+        },
+        "Deprivation of liberty": {
+            "{{Check_79}}": "Arbitrary arrest, detention",
+            "{{Check_80}}": "Arbitrary restrictions on movement",
+            "{{Check_81}}": "Abduction and/or kidnapping",
+            "{{Check_82}}": "Enforced disappearance",
+            "{{Check_83}}": "Other"
+        },
+        "Exploitation": {
+            "{{Check_84}}": "Extortion",
+            "{{Check_85}}": "Forced labor (slavery)",
+            "{{Check_86}}": "Trafficking in persons (forced prostitution, forced marriage, organ harvesting)/refer",
+            "{{Check_87}}": "Forced recruitment (adults)",
+            "{{Check_88}}": "Other"
+        },
+        "Forced/denied access to territory & asylum": {
+            "{{Check_89}}": "Refoulement",
+            "{{Check_90}}": "Rejection at border/frontier",
+            "{{Check_91}}": "Denial of access to asylum procedures",
+            "{{Check_92}}": "Other"
+        },
+        "Denial of family life": {
+            "{{Check_93}}": "Denied a family or relationship",
+            "{{Check_94}}": "Denied or unable to exercise family unity",
+            "{{Check_95}}": "Forced Family separation",
+            "{{Check_96}}": "Other"
+        },
+        "Access to justice": {
+            "{{Check_97}}": "Denied access to judiciary/legal counsel/representation",
+            "{{Check_98}}": "Denied fair trial, effective remedy",
+            "{{Check_99}}": "Other"
+        },
+        "Denial of economic, social and cultural rights (Discrimination and exclusion from access to humanitarian assistance)": {
+            "{{Check_100}}": "Deprived access to basic needs and services (denial of food, medicine, assistive devices on the basis of age and disability)",
+            "{{Check_101}}": "Denial of the right to work",
+            "{{Check_102}}": "Forced eviction",
+            "{{Check_103}}": "Destruction/loss of property",
+            "{{Check_104}}": "Other"
+        },
+        "Right to nationality, civil status registration and documentation": {
+            "{{Check_105}}": "Denial of birth registration and/or certificate",
+            "{{Check_106}}": "Arbitrary deprivation of nationality",
+            "{{Check_107}}": "Denial of travel documents",
+            "{{Check_108}}": "Other"
+        },
         "Vulnerability Profile": {
             "{{Check_109}}": "Person with Disability",
             "{{Check_110}}": "Older person at-risk",
