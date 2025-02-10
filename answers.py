@@ -7,6 +7,7 @@ formAnswer={
         "{{Check_3}}": "answer",
         "{{Check_4}}": "answer",
         "{{Check_5}}": "answer",
+        "{{Check_6}}": "answer",
         "{{specify_id}}": "answer",
         "{{date_id}}": "answer",
         "{{Check_7}}": "answer",
