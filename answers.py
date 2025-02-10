@@ -1,4 +1,4 @@
-formAnswer ={
+formAnswer={
     "Form2": {
         "{{date_session}}": "answer",
         "{{location}}": "answer",
@@ -137,7 +137,7 @@ formAnswer ={
         "{{Check_114}}": "answer",
         "{{Check_115}}": "answer"
     }
-},
+,
 
 "Form3": {
         "{{staff_code}}": "answer",
