@@ -1,4 +1,2 @@
 google.generativeai
-Document
-json
-os
+docx
