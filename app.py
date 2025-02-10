@@ -33,7 +33,7 @@ if not st.session_state.authenticated:
 
 st.title("File Filler 🤖")
 selected_form = st.selectbox("Select a Form:", list(form_data.keys()), index=0)
-user_input = st.text_area("Enter The Prompt:", height=150)
+user_input = st.text_area("Enter The Prompt:", height=200)
 response = ""
 if st.button("Fill Form"):
     if user_input.strip():
@@ -41,7 +41,6 @@ if st.button("Fill Form"):
             query = "For the given prompt:"+user_input+ ", analyze then answer the questions of the following dictionary: " +json.dumps(form_data.get(selected_form)) + ", and fill this dictionary with the correct answers: "+ json.dumps(formAnswer.get(selected_form)) + " and the answer of {{checks}} is either 'true' or 'false', if you do not know if it is true or false then put 'false'. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA instead, however for {{checks}} like {{check_14}} put 'false' if you do not know or have an answer, and never put 'true' or 'false' for anything except {{checks}}, for example: {{reunification}}:'no' instead of {{reunification}}:'false'. Give me the result directly in json format with nothing written before or after and DO NOT SKIP AN ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 100 characters. Give me the result directly in json format as a string with nothing written before or after!"
             response = get_gemini_response(query)
         st.write("**Gemini AI Response:**")
-        st.write(response)
     else:
         st.warning("Please enter a valid prompt!")
 
