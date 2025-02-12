@@ -73,12 +73,12 @@ if response != "":
                 for cell in row.cells:
                     for key, value in data.items():
                         if key in cell.text:
-                            if value == "false":
+                            if str(value) == "false":
                                 if(str(key).startswith("{{Check")):
                                     cell.text = cell.text.replace(key, " ☐")
                                 else:
                                     cell.text = cell.text.replace(key, value)
-                            elif value == "true":
+                            elif str(value) == "true":
                                 if(str(key).startswith("{{Check")):
                                     cell.text = cell.text.replace(key, " ☑")
                                 else:
@@ -86,7 +86,7 @@ if response != "":
                             elif value == "NA":
                                 cell.text = cell.text.replace(key, " ")
                             else:
-                                cell.text = cell.text.replace(key, value)
+                                cell.text = cell.text.replace(str(key or ""), str(value or ""))
 
         file_path = f"{selected_form}_filled.docx"
         filled = doc.save(file_path)
