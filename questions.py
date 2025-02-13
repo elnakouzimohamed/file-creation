@@ -303,7 +303,7 @@ form_data = {
             "{{Check_55}}": "Other",
             "{{explain_5}}": "Specify if other"
         },
-        "{{housing_situation}}": "Comment/observation on housing situation",
+        "{{housing_situation}}": "Comment/observation on housing situation: Observe the condition of the housing, whether there is adequate lighting and sanitation and the smell. Can all people within the household enter, circulate and use it, privacy between families, and security of tenure.",
         "Do you experience any difficulties accessing your daily food and/or water needs?": {
             "{{Check_56}}": "Yes",
             "{{explain_6}}": "Explain",
@@ -442,17 +442,17 @@ form_data = {
             "{{Check_131}}": "Very difficult",
             "{{Check_132}}": "Extremely difficult",
         },
-        "{{protection_risk}}": "Protection Risk",
+        "{{protection_risk}}": "What protection risk is the individual facing or currently experiencing?",
         "Current risk level": {
             "{{Check_133}}": "High",
             "{{Check_134}}": "Medium",
         },
-        "{{threats}}": "Threats",
-        "{{vulnerabilities}}": "Vulnerabilities",
-        "{{personal_strengths}}": "Personal Strengths",
+        "{{threats}}": "what are the threats",
+        "{{vulnerabilities}}": "what are the vulnerabilities faced",
+        "{{personal_strengths}}": "list the personal Strengths of this person",
         "{{family_support}}": "Family/Community Support",
-        "{{most_worrying_about}}": "PoC Summary",
-        "{{suggestions}}": "Suggestions",
+        "{{most_worrying_about}}": "From what we have discussed, what do you feel are the three things which are worrying you most?",
+        "{{suggestions}}": "Do you have any suggestions for what you and I can do to help this situation?",
         "{{summary}}": "Caseworker Summary",
         "{{ex_protection_outcome}}": "Expected Protection Outcome",
     }
