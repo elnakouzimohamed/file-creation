@@ -40,7 +40,7 @@ if st.button("Fill Form"):
         with st.spinner("Preparing your file..."):
             query = "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get(selected_form))+"and the answer of {{checks}} is either 'true' or 'false' only only as a string only, if you do not know if it is 'true' or 'false' then put 'false', and analyze carefully before answering. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA instead if and only if when the answer can not be determined or concluded or interpreted or analyzed from the prompt, however for {{checks}} like {{check_14}} put 'false' if you do not know or have an answer. Give me the result directly in json format with nothing written before or after and DO NOT SKIP AN ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 40 words, no 'answer' having more than 40 words is acceptable. Try to elaborate your answers within those 40 words even if there is no enough data try to analyze them, do not write very brief answers. Give me the result directly in json format as a string with nothing written before or after!"
             response = get_gemini_response(query)
-        # st.write(response)
+        st.write(response)
     else:
         st.warning("Please enter a valid prompt!")
 
