@@ -307,14 +307,6 @@ formAnswer={
         "{{Check_132}}": "answer",
         "{{protection_risk}}": "answer",
         "{{Check_133}}": "answer",
-        "{{Check_134}}": "answer",
-        "{{threats}}": "answer",
-        "{{vulnerabilities}}": "answer",
-        "{{personal_strengths}}": "answer",
-        "{{family_support}}": "answer",
-        "{{most_worrying_about}}": "answer",
-        "{{suggestions}}": "answer",
-        "{{summary}}": "answer",
-        "{{ex_protection_outcome}}": "answer"
+        "{{Check_134}}": "answer"
     }
 }
