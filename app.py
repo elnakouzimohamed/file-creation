@@ -84,7 +84,10 @@ if response != "":
                                 else:
                                     cell.text = cell.text.replace(key, value)
                             elif value == "NA":
-                                cell.text = cell.text.replace(key, " ")
+                                if(str(key).startswith("{{Check")):
+                                    cell.text = cell.text.replace(key, " ☐")
+                                else:
+                                    cell.text = cell.text.replace(key, " ")
                             else:
                                 cell.text = cell.text.replace(str(key or ""), str(value or ""))
 
