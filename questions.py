@@ -204,257 +204,261 @@ form_data = {
     },
     
     "Form3": {
-        "{{staff_code}}": "Staff Code",
-        "{{case_code}}": "Case Code",
-        "{{date}}": "Date Assessment",
-        "Type of Assessment": {
-            "{{Check_1}}": "Home Visit",
-            "{{Check_2}}": "Phone",
-            "{{Check_3}}": "Community Development Centre",
-            "{{Check_4}}": "Mobile Safe Space",
-            "{{Check_5}}": "Other",
-            "{{assessment_type}}": "Please specify if other"
-        },
-        "Do you need any support to take part in this meeting?": {
-            "{{Check_6}}": "Yes",
-            "{{Check_7}}": "No"
-        },
-        "{{support_required}}": "Support required if yes",
-        "Is everyone in your household registered with UNHCR?": {
-            "{{Check_8}}": "Yes",
-            "{{Check_9}}": "No",
-            "{{Check_10}}": "Don't know"
-        },
-        "Do all of your children have official birth certificates?": {
-            "{{Check_11}}": "Yes",
-            "{{Check_12}}": "No",
-            "{{Check_13}}": "Don't know"
-        },
-        "Are you aware of how to register your child’s birth in Lebanon?": {
-            "{{Check_14}}": "Yes",
-            "{{Check_15}}": "No",
-            "{{Check_16}}": "Don't know"
-        },
-        "Do you have a valid residence permit/residency card?": {
-            "{{Check_17}}": "Yes",
-            "{{Check_18}}": "No",
-            "{{Check_19}}": "Don't know"
-        },
-        "Does anyone else in your household have a valid residence permit/residency card?": {
-            "{{Check_20}}": "Yes",
-            "{{Check_21}}": "No",
-            "{{Check_22}}": "Don't know"
-        },
-        "Do/did you or your family face any safety or security threat or incidents?": {
-            "{{Check_23}}": "Yes",
-            "{{explain_1}}": "Explain if yes",
-            "{{Check_24}}": "No"
-        },
-        "Who are you living with?": {
-            "{{Check_25}}": "Immediate family",
-            "{{Check_26}}": "Relatives",
-            "{{Check_27}}": "Non-relatives",
-            "{{Check_28}}": "Independently",
-            "{{Check_29}}": "Other"
-        },
-        "{{number_of_people_living_with}}": "How many people are you living with?",
-        "Where are your immediate family members (if not with family)?": {
-            "{{Check_30}}": "In another country",
-            "{{Check_31}}": "In another location in this country",
-            "{{Check_32}}": "Don’t know",
-            "{{explain_2}}": "Other"
-        },
-        "{{reunification}}": "Are you in need of family tracing and reunification support?",
-        "What is your housing situation?": {
-            "{{Check_34}}": "Owned (Apartment or House)",
-            "{{Check_35}}": "Rented",
-            "{{rental_amount}}": "Rental amount",
-            "{{Check_36}}": "Informal tenure/unpaid",
-            "{{Check_37}}": "Living with host family (paying rent)",
-            "{{family_rental_amount}}": "Family rental amount",
-            "{{Check_38}}": "Living with host family (not paying rent)",
-            "{{Check_39}}": "Camp or informal settlement",
-            "{{Check_40}}": "Other",
-            "{{explain_3}}": "Specify if other"
-        },
-        "Do you have a written lease agreement?": {
-            "{{Check_41}}": "Yes",
-            "{{Check_42}}": "No"
-        },
-        "{{explain_4}}": "Explain lease agreement",
-        "Do you feel safe/secure that you can stay in this shelter as long as you want to?": {
-            "{{Check_43}}": "Very Stable",
-            "{{Check_44}}": "Stable",
-            "{{Check_45}}": "Insecure",
-            "{{Check_46}}": "Very Insecure",
-            "{{secure_details}}": "If insecure or very insecure, provide further details"
-        },
-        "How would you assess the accessibility of your place?": {
-            "{{Check_47}}": "Accessible",
-            "{{Check_48}}": "Limited accessibility - Needs Rehabilitation",
-            "{{Check_49}}": "Not accessible at all - Needs Rehabilitation"
-        },
-        "What arrangements do you need to make your place more accessible?": {
-            "{{Check_50}}": "Hand rails",
-            "{{Check_51}}": "Ramps at the entrance",
-            "{{Check_52}}": "Ramps at the doorstep",
-            "{{Check_53}}": "Install Bathroom and toilet aids",
-            "{{Check_54}}": "Install external electric Elevator",
-            "{{Check_55}}": "Other",
-            "{{explain_5}}": "Specify if other"
-        },
-        "{{housing_situation}}": "Comment/observation on housing situation: Observe the condition of the housing, whether there is adequate lighting and sanitation and the smell. Can all people within the household enter, circulate and use it, privacy between families, and security of tenure.",
-        "Do you experience any difficulties accessing your daily food and/or water needs?": {
-            "{{Check_56}}": "Yes",
-            "{{explain_6}}": "Explain",
-            "{{Check_57}}": "No"
-        },
-        "Do you experience any challenges hindering access to basic services?": {
-            "{{Check_58}}": "Yes",
-            "{{explain_7}}": "Explain",
-            "{{Check_59}}": "No"
-        },
-        "What type of barriers are you experiencing?": {
-            "{{Check_60}}": "Physical barriers in buildings",
-            "{{Check_61}}": "Inaccessible transportation",
-            "{{Check_62}}": "Lack of accessible communication means",
-            "{{Check_63}}": "Exclusion from services",
-            "{{Check_64}}": "Financial barriers",
-            "{{Check_65}}": "Service unavailable",
-            "{{check_66}}": "Other",
-            "{{explain_8}}": "Specify if other"
-        },
-        "Do you currently receive any assistance from other organizations?": {
-            "{{Check_67}}": "Yes",
-            "{{explain_9}}": "Explain",
-            "{{Check_68}}": "No",
-        },
-        "If you receive assistance, what type is it?": {
-            "{{Check_69}}": "Cash for rent",
-            "{{Check_70}}": "MCAP",
-            "{{Check_71}}": "PCAP (1&2)",
-            "{{Check_72}}": "PCAP 3",
-            "{{Check_73}}": "CFP",
-            "{{Check_74}}": "ECA",
-            "{{Check_75}}": "In-kind",
-            "{{specify_inkind}}": "If in-kind, specify",
-            "{{Check_76}}": "Other",
-            "{{specify_other}}": "If other, specify",
-        },
-        "Do you/your Household have any income?": {
-            "{{Check_77}}": "Yes",
-            "{{Check_78}}": "No",
-        },
-        "{{explain_10}}": "Explain income",
-        "{{income_source}}": "Income source",
-        "Do you have control over the use of your income?": {
-            "{{Check_79}}": "Yes",
-            "{{Check_80}}": "No",
-        },
-        "{{explain_11}}": "Explain income control",
-        "Do you feel your material needs are met?": {
-            "{{Check_81}}": "Yes",
-            "{{Check_82}}": "No",
-        },
-        "{{explain_12}}": "Explain material needs",
-        "Has there been a sudden change in income in the past 30 days?": {
-            "{{Check_83}}": "Yes",
-            "{{explain_13}}": "Explain",
-            "{{Check_84}}": "No",
-        },
-        "Do you have any health concerns?": {
-            "{{Check_85}}": "No",
-            "{{Check_86}}": "Yes",
-        },
-        "{{explain_14}}": "Explain health concerns",
-        "Do you receive any treatment or support?": {
-            "{{Check_87}}": "No",
-            "{{Check_88}}": "Yes",
-        },
-        "{{received_treatment}}": "If yes, who is providing treatment?",
-        "Do you need support to take care of yourself?": {
-            "{{Check_89}}": "No",
-            "{{Check_90}}": "Yes",
-        },
-        "{{selfcare_support}}": "If yes, who provides this support?",
-        "Does your household give you the support you need?": {
-            "{{Check_91}}": "Yes",
-            "{{Check_92}}": "No",
-            "{{explain_15}}": "Explain household support",
-        },
-        "Had little interest or pleasure in doing things": {
-            "{{Check_93}}": "Not at all",
-            "{{Check_94}}": "Several days",
-            "{{Check_95}}": "More than half the days",
-            "{{Check_96}}": "Nearly every day",
-        },
-        "Been feeling down, depressed or hopeless": {
-            "{{Check_97}}": "Not at all",
-            "{{Check_98}}": "Several days",
-            "{{Check_99}}": "More than half the days",
-            "{{Check_100}}": "Nearly every day",
-        },
-        "Had trouble falling/staying asleep or are sleeping too much": {
-            "{{Check_101}}": "Not at all",
-            "{{Check_102}}": "Several days",
-            "{{Check_103}}": "More than half the days",
-            "{{Check_104}}": "Nearly every day",
-        },
-        "Been feeling tired or having little energy": {
-            "{{Check_105}}": "Not at all",
-            "{{Check_106}}": "Several days",
-            "{{Check_107}}": "More than half the days",
-            "{{Check_108}}": "Nearly every day",
-        },
-        "Had poor appetite or overate": {
-            "{{Check_109}}": "Not at all",
-            "{{Check_110}}": "Several days",
-            "{{Check_111}}": "More than half the days",
-            "{{Check_112}}": "Nearly every day",
-        },
-        "Feeling bad about yourself or that you are a failure": {
-            "{{Check_113}}": "Not at all",
-            "{{Check_114}}": "Several days",
-            "{{Check_115}}": "More than half the days",
-            "{{Check_116}}": "Nearly every day",
-        },
-        "Had trouble concentrating on things": {
-            "{{Check_117}}": "Not at all",
-            "{{Check_118}}": "Several days",
-            "{{Check_119}}": "More than half the days",
-            "{{Check_120}}": "Nearly every day",
-        },
-        "Been moving or speaking slowly or feeling restless": {
-            "{{Check_121}}": "Not at all",
-            "{{Check_122}}": "Several days",
-            "{{Check_123}}": "More than half the days",
-            "{{Check_124}}": "Nearly every day",
-        },
-        "Had thoughts that you would be better off dead or of hurting yourself": {
-            "{{Check_125}}": "Not at all",
-            "{{Check_126}}": "Several days",
-            "{{Check_127}}": "More than half the days",
-            "{{Check_128}}": "Nearly every day",
-        },
-        "How difficult have these problems made it for you?": {
-            "{{Check_129}}": "Not difficult at all",
-            "{{Check_130}}": "Somewhat difficult",
-            "{{Check_131}}": "Very difficult",
-            "{{Check_132}}": "Extremely difficult",
-        },
-        "{{protection_risk}}": "What protection risk is the individual facing or currently experiencing?",
-        "Current risk level": {
-            "{{Check_133}}": "High",
-            "{{Check_134}}": "Medium",
-        },
-        "{{threats}}": "what are the threats",
-        "{{vulnerabilities}}": "what are the vulnerabilities faced",
-        "{{personal_strengths}}": "list the personal Strengths of this person",
-        "{{family_support}}": "Family/Community Support",
-        "{{most_worrying_about}}": "From what we have discussed, what do you feel are the three things which are worrying you most?",
-        "{{suggestions}}": "Do you have any suggestions for what you and I can do to help this situation?",
-        "{{summary}}": "Caseworker Summary",
-        "{{ex_protection_outcome}}": "Expected Protection Outcome",
+        "Form3_part1":{
+            "{{staff_code}}": "Staff Code",
+            "{{case_code}}": "Case Code",
+            "{{date}}": "Date Assessment",
+            "Type of Assessment": {
+                "{{Check_1}}": "Home Visit",
+                "{{Check_2}}": "Phone",
+                "{{Check_3}}": "Community Development Centre",
+                "{{Check_4}}": "Mobile Safe Space",
+                "{{Check_5}}": "Other",
+                "{{assessment_type}}": "Please specify if other"
+            },
+            "Do you need any support to take part in this meeting?": {
+                "{{Check_6}}": "Yes",
+                "{{Check_7}}": "No"
+            },
+            "{{support_required}}": "Support required if yes",
+            "Is everyone in your household registered with UNHCR?": {
+                "{{Check_8}}": "Yes",
+                "{{Check_9}}": "No",
+                "{{Check_10}}": "Don't know"
+            },
+            "Do all of your children have official birth certificates?": {
+                "{{Check_11}}": "Yes",
+                "{{Check_12}}": "No",
+                "{{Check_13}}": "Don't know"
+            },
+            "Are you aware of how to register your child’s birth in Lebanon?": {
+                "{{Check_14}}": "Yes",
+                "{{Check_15}}": "No",
+                "{{Check_16}}": "Don't know"
+            },
+            "Do you have a valid residence permit/residency card?": {
+                "{{Check_17}}": "Yes",
+                "{{Check_18}}": "No",
+                "{{Check_19}}": "Don't know"
+            },
+            "Does anyone else in your household have a valid residence permit/residency card?": {
+                "{{Check_20}}": "Yes",
+                "{{Check_21}}": "No",
+                "{{Check_22}}": "Don't know"
+            },
+            "Do/did you or your family face any safety or security threat or incidents?": {
+                "{{Check_23}}": "Yes",
+                "{{explain_1}}": "Explain if yes",
+                "{{Check_24}}": "No"
+            },
+            "Who are you living with?": {
+                "{{Check_25}}": "Immediate family",
+                "{{Check_26}}": "Relatives",
+                "{{Check_27}}": "Non-relatives",
+                "{{Check_28}}": "Independently",
+                "{{Check_29}}": "Other"
+            },
+            "{{number_of_people_living_with}}": "How many people are you living with?",
+            "Where are your immediate family members (if not with family)?": {
+                "{{Check_30}}": "In another country",
+                "{{Check_31}}": "In another location in this country",
+                "{{Check_32}}": "Don’t know",
+                "{{explain_2}}": "Other"
+            },
+            "{{reunification}}": "Are you in need of family tracing and reunification support?",
+            "What is your housing situation?": {
+                "{{Check_34}}": "Owned (Apartment or House)",
+                "{{Check_35}}": "Rented",
+                "{{rental_amount}}": "Rental amount",
+                "{{Check_36}}": "Informal tenure/unpaid",
+                "{{Check_37}}": "Living with host family (paying rent)",
+                "{{family_rental_amount}}": "Family rental amount",
+                "{{Check_38}}": "Living with host family (not paying rent)",
+                "{{Check_39}}": "Camp or informal settlement",
+                "{{Check_40}}": "Other",
+                "{{explain_3}}": "Specify if other"
+            },
+            "Do you have a written lease agreement?": {
+                "{{Check_41}}": "Yes",
+                "{{Check_42}}": "No"
+            },
+            "{{explain_4}}": "Explain lease agreement",
+            "Do you feel safe/secure that you can stay in this shelter as long as you want to?": {
+                "{{Check_43}}": "Very Stable",
+                "{{Check_44}}": "Stable",
+                "{{Check_45}}": "Insecure",
+                "{{Check_46}}": "Very Insecure",
+                "{{secure_details}}": "If insecure or very insecure, provide further details"
+            },
+            "How would you assess the accessibility of your place?": {
+                "{{Check_47}}": "Accessible",
+                "{{Check_48}}": "Limited accessibility - Needs Rehabilitation",
+                "{{Check_49}}": "Not accessible at all - Needs Rehabilitation"
+            },
+            "What arrangements do you need to make your place more accessible?": {
+                "{{Check_50}}": "Hand rails",
+                "{{Check_51}}": "Ramps at the entrance",
+                "{{Check_52}}": "Ramps at the doorstep",
+                "{{Check_53}}": "Install Bathroom and toilet aids",
+                "{{Check_54}}": "Install external electric Elevator",
+                "{{Check_55}}": "Other",
+                "{{explain_5}}": "Specify if other"
+            },
+            "{{housing_situation}}": "Comment/observation on housing situation: Observe the condition of the housing, whether there is adequate lighting and sanitation and the smell. Can all people within the household enter, circulate and use it, privacy between families, and security of tenure.",
+            "Do you experience any difficulties accessing your daily food and/or water needs?": {
+                "{{Check_56}}": "Yes",
+                "{{explain_6}}": "Explain",
+                "{{Check_57}}": "No"
+            },
+            "Do you experience any challenges hindering access to basic services?": {
+                "{{Check_58}}": "Yes",
+                "{{explain_7}}": "Explain",
+                "{{Check_59}}": "No"
+            },
+            "What type of barriers are you experiencing?": {
+                "{{Check_60}}": "Physical barriers in buildings",
+                "{{Check_61}}": "Inaccessible transportation",
+                "{{Check_62}}": "Lack of accessible communication means",
+                "{{Check_63}}": "Exclusion from services",
+                "{{Check_64}}": "Financial barriers",
+                "{{Check_65}}": "Service unavailable",
+                "{{check_66}}": "Other",
+                "{{explain_8}}": "Specify if other"
+            },
+            "Do you currently receive any assistance from other organizations?": {
+                "{{Check_67}}": "Yes",
+                "{{explain_9}}": "Explain",
+                "{{Check_68}}": "No",
+            },
+            "If you receive assistance, what type is it?": {
+                "{{Check_69}}": "Cash for rent",
+                "{{Check_70}}": "MCAP",
+                "{{Check_71}}": "PCAP (1&2)",
+                "{{Check_72}}": "PCAP 3",
+                "{{Check_73}}": "CFP",
+                "{{Check_74}}": "ECA",
+                "{{Check_75}}": "In-kind",
+                "{{specify_inkind}}": "If in-kind, specify",
+                "{{Check_76}}": "Other",
+                "{{specify_other}}": "If other, specify",
+            },
+            "Do you/your Household have any income?": {
+                "{{Check_77}}": "Yes",
+                "{{Check_78}}": "No",
+            },
+            "{{explain_10}}": "Explain income",
+            "{{income_source}}": "Income source",
+            "Do you have control over the use of your income?": {
+                "{{Check_79}}": "Yes",
+                "{{Check_80}}": "No",
+            },
+            "{{explain_11}}": "Explain income control",
+            "Do you feel your material needs are met?": {
+                "{{Check_81}}": "Yes",
+                "{{Check_82}}": "No",
+            },
+            "{{explain_12}}": "Explain material needs",
+            "Has there been a sudden change in income in the past 30 days?": {
+                "{{Check_83}}": "Yes",
+                "{{explain_13}}": "Explain",
+                "{{Check_84}}": "No",
+            },
+            "Do you have any health concerns?": {
+                "{{Check_85}}": "No",
+                "{{Check_86}}": "Yes",
+            },
+            "{{explain_14}}": "Explain health concerns",
+            "Do you receive any treatment or support?": {
+                "{{Check_87}}": "No",
+                "{{Check_88}}": "Yes",
+            },
+            "{{received_treatment}}": "If yes, who is providing treatment?",
+            "Do you need support to take care of yourself?": {
+                "{{Check_89}}": "No",
+                "{{Check_90}}": "Yes",
+            },
+            "{{selfcare_support}}": "If yes, who provides this support?",
+            "Does your household give you the support you need?": {
+                "{{Check_91}}": "Yes",
+                "{{Check_92}}": "No",
+                "{{explain_15}}": "Explain household support",
+            },
+            "Had little interest or pleasure in doing things": {
+                "{{Check_93}}": "Not at all",
+                "{{Check_94}}": "Several days",
+                "{{Check_95}}": "More than half the days",
+                "{{Check_96}}": "Nearly every day",
+            },
+            "Been feeling down, depressed or hopeless": {
+                "{{Check_97}}": "Not at all",
+                "{{Check_98}}": "Several days",
+                "{{Check_99}}": "More than half the days",
+                "{{Check_100}}": "Nearly every day",
+            },
+            "Had trouble falling/staying asleep or are sleeping too much": {
+                "{{Check_101}}": "Not at all",
+                "{{Check_102}}": "Several days",
+                "{{Check_103}}": "More than half the days",
+                "{{Check_104}}": "Nearly every day",
+            },
+            "Been feeling tired or having little energy": {
+                "{{Check_105}}": "Not at all",
+                "{{Check_106}}": "Several days",
+                "{{Check_107}}": "More than half the days",
+                "{{Check_108}}": "Nearly every day",
+            },
+            "Had poor appetite or overate": {
+                "{{Check_109}}": "Not at all",
+                "{{Check_110}}": "Several days",
+                "{{Check_111}}": "More than half the days",
+                "{{Check_112}}": "Nearly every day",
+            },
+            "Feeling bad about yourself or that you are a failure": {
+                "{{Check_113}}": "Not at all",
+                "{{Check_114}}": "Several days",
+                "{{Check_115}}": "More than half the days",
+                "{{Check_116}}": "Nearly every day",
+            },
+            "Had trouble concentrating on things": {
+                "{{Check_117}}": "Not at all",
+                "{{Check_118}}": "Several days",
+                "{{Check_119}}": "More than half the days",
+                "{{Check_120}}": "Nearly every day",
+            },
+            "Been moving or speaking slowly or feeling restless": {
+                "{{Check_121}}": "Not at all",
+                "{{Check_122}}": "Several days",
+                "{{Check_123}}": "More than half the days",
+                "{{Check_124}}": "Nearly every day",
+            },
+            "Had thoughts that you would be better off dead or of hurting yourself": {
+                "{{Check_125}}": "Not at all",
+                "{{Check_126}}": "Several days",
+                "{{Check_127}}": "More than half the days",
+                "{{Check_128}}": "Nearly every day",
+            },
+            "How difficult have these problems made it for you?": {
+                "{{Check_129}}": "Not difficult at all",
+                "{{Check_130}}": "Somewhat difficult",
+                "{{Check_131}}": "Very difficult",
+                "{{Check_132}}": "Extremely difficult",
+            },
+            "{{protection_risk}}": "What protection risk is the individual facing or currently experiencing?",
+            "Current risk level": {
+                "{{Check_133}}": "High",
+                "{{Check_134}}": "Medium",
+            }
+        }
+        ,"Form3_part2":{
+            "{{threats}}": "what are the threats",
+            "{{vulnerabilities}}": "what are the vulnerabilities faced",
+            "{{personal_strengths}}": "list the personal Strengths of this person",
+            "{{family_support}}": "Family/Community Support",
+            "{{most_worrying_about}}": "From what we have discussed, what do you feel are the three things which are worrying you most?",
+            "{{suggestions}}": "Do you have any suggestions for what you and I can do to help this situation?",
+            "{{summary}}": "Caseworker Summary",
+            "{{ex_protection_outcome}}": "Expected Protection Outcome"  
+        }
     }
 }
 
