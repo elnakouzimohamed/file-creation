@@ -309,4 +309,14 @@ formAnswer={
         "{{Check_133}}": "answer",
         "{{Check_134}}": "answer"
     }
+    "Form3_part2":{
+        "{{threats}}": "answer",
+        "{{vulnerabilities}}": "answer",
+        "{{personal_strengths}}": "answer",
+        "{{family_support}}": "answer",
+        "{{most_worrying_about}}": "answer",
+        "{{suggestions}}": "answer",
+        "{{summary}}": "answer",
+        "{{ex_protection_outcome}}": "answer"
+    }
 }
