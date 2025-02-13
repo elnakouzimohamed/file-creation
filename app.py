@@ -71,12 +71,12 @@ if response != "":
     try:
         data = json.loads(response)
         
-        missing_keys = find_missing_keys(formAnswer.get(selected_form), data)
-        for key in missing_keys:
-            if str(key).startswith("{{Check"):
-                data[key] = " ☐"
-            else:
-                data[key] = " "
+        # missing_keys = find_missing_keys(formAnswer.get(selected_form), data)
+        # for key in missing_keys:
+        #     if str(key).startswith("{{Check"):
+        #         data[key] = " ☐"
+        #     else:
+        #         data[key] = " "
                 
         for table in doc.tables:
             for row in table.rows:
