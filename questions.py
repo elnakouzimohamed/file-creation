@@ -140,7 +140,7 @@ form_data = {
             },
             "{{key_concerns}}":"Can you summarize the key concerns that worry you the most?",
             "{{resolve_concerns}}": "What steps have you taken to try to resolve these concerns?",
-            "{{what_worked_and_not}}": "What worked well and what did not?",
+            "{{what_worked_and_not}}": "What from the steps you have taken to try to resolve these concerns has worked well, and what did not work well?",
             "Do you or other members of the family have work or an income of any kind at the moment?": {
                 "{{Check_74}}": "Yes",
                 "{{Check_75}}": "No",
