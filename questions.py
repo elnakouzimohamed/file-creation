@@ -77,7 +77,7 @@ form_data = {
             "{{Check_47}}": "PRL",
             "{{Check_48}}": "Stateless",
             "{{Check_49}}": "Other",
-            "{{specify_origin}}": "specify"
+            "{{specify_origin}}": "specify origin"
         },
         "Displacement status": {
             "{{Check_50}}": "IDP",
@@ -96,44 +96,44 @@ form_data = {
             "{{Check_58}}": "Yes",
             "{{Check_59}}": "No"
         },
-        "Please specify the reasons": "{{reasons}}",
+        "Please specify the reasons to not be registered in the UNHCR": "{{reasons}}",
         "Do you have caregiver/s?": {
-            "{{Check_60}}": "Yes",
-            "{{Check_61}}": "No"
+            "{{Check_60}}": "Yes I have caregiver/s",
+            "{{Check_61}}": "No I do not have caregiver/s"
         },
         "{{caregiver_name}}":"What is the name of the caregiver/s?",
         "{{caregiver_relationship}}":"What is your relationship to them?",
-        "{{reason_of_coming}}": "Can you tell me what brought you here today?",
+        "{{reason_of_coming}}": "Can you tell me what brought him and the reason behind giving us those information in 50 words",
         "Can you explain whether you have any immediate medical, physical or emotional needs?": {
             "{{Check_62}}": "Yes",
-            "{{needs}}": "Briefly explain the needs",
+            "{{needs}}": "Explain the needs he must have from medical to physical to emotional needs in 40 words",
             "{{Check_63}}": "No"
         },
         "Do you feel safe within your community and/or the location you currently live?": {
             "{{Check_64}}": "Yes, feeling safe",
             "{{Check_65}}": "No, feeling unsafe",
-            "{{explain_1}}": "Explain what makes you feel safe or unsafe"
+            "{{explain_1}}": "Explain what makes him/her feel safe or unsafe in your community and location in 30 words"
         },
         "Do you feel safe in your home?": {
             "{{Check_66}}": "Yes, feeling safe",
             "{{Check_67}}": "No, feeling unsafe",
-            "{{explain_2}}":"Explain what makes you feel safe or unsafe (home)"
+            "{{explain_2}}":"Explain what makes him/her feel safe or unsafe in home in 30 words"
         },
-        "{{significant_people}}": "Can you tell me about any people or groups that are particularly significant in your life?",
+        "{{significant_people}}": "Can you tell me about any people or groups that are particularly significant in his/her life?",
         "Do you feel that some of these people or groups are able to support you?": {
             "{{Check_68}}": "Yes",
             "{{Check_69}}": "No",
-            "{{explain_3}}": "Explain"
+            "{{explain_3}}": "Explain how can they support him/her, or if no why they can not support"
         },
         "Do you participate in and contribute to decisions that affect you in the home and community?": {
             "{{Check_70}}": "Yes",
             "{{Check_71}}": "No",
-            "{{explain_4}}": "Explain participation in decision-making"
+            "{{explain_4}}": "Explain how you participate in and contribute to decisions that affect you in the home and community, or if not why you do not"
         },
         "Do you have access to available services on an equal basis with others?": {
             "{{Check_72}}": "Yes",
             "{{Check_73}}": "No",
-            "{{explain_5}}":"Explain access to services" 
+            "{{explain_5}}":"Explain your access to services on an equal basis with others or if not why not" 
         },
         "{{key_concerns}}":"Can you summarize the key concerns that worry you the most?",
         "{{resolve_concerns}}": "What steps have you taken to try to resolve these concerns?",
@@ -141,9 +141,9 @@ form_data = {
         "Do you or other members of the family have work or an income of any kind at the moment?": {
             "{{Check_74}}": "Yes",
             "{{Check_75}}": "No",
-            "{{explain_6}}":"Explain work or income situation"
+            "{{explain_6}}":"Explain how you or other members of the family have work or an income of any kind at the moment or if not why not"
         },
-        "Type of violation?": "{{violation_type}}",
+        "Type of violation facing?": "{{violation_type}}",
         "Torture, inhumane, cruel or degrading treatment or punishment (including physical and psychological violence Note: All cases of rape, sexual assault, physical assault or abuse, forced marriage, denial of resources, opportunities or services, psychological and/or emotional abuse for women, girls and boys, should be referred for GBV or child protection case management": {
             "{{Check_76}}": "Torture",
             "{{Check_77}}": "Other inhumane, cruel or degrading treatment or punishment",
