@@ -258,7 +258,7 @@ form_data = {
                 "{{explain_1}}": "Explain if yes",
                 "{{Check_24}}": "No"
             },
-            "Who are you living with?": {
+            "Who are you living with, which of these?": {
                 "{{Check_25}}": "Immediate family",
                 "{{Check_26}}": "Relatives",
                 "{{Check_27}}": "Non-relatives",
@@ -266,7 +266,7 @@ form_data = {
                 "{{Check_29}}": "Other"
             },
             "{{number_of_people_living_with}}": "How many people are you living with?",
-            "Where are your immediate family members (if not with family)?": {
+            "If not living with Immediate family, where your immediate family members are?": {
                 "{{Check_30}}": "In another country",
                 "{{Check_31}}": "In another location in this country",
                 "{{Check_32}}": "Don’t know",
