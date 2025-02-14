@@ -96,8 +96,8 @@ if response != "":
                     data[key] = " "
 
         elif(selected_form=="Form2"):
-            all_key_values= formAnswer.get("Form2_part1")
-            missing_keys = find_missing_keys(formAnswer.get("Form2_part1"), formAnswer.get("Form2_part2"))
+            all_key_values= formAnswer.get("Form2")
+            missing_keys = find_missing_keys(formAnswer.get("Form2"), formAnswer.get("Form2_part2"))
             for key in missing_keys:
                 if str(key).startswith("{{Check"):
                     all_key_values[key] = " ☐"
