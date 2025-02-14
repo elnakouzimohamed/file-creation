@@ -96,7 +96,9 @@ data = {}
 # Dictionary of values to replace placeholders
 if response != "":
     try:
+        st.write("loading")
         data = json.loads(response)
+        st.write("Loaded")
         
         if(selected_form=="Form3"):
             all_key_values= formAnswer.get("Form3_part1")
