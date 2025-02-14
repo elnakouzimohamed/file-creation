@@ -2,9 +2,7 @@ form_data = {
     "CFP": {
         "{{response_1}}":"write the protection Risk/Emergency situation briefing, purpose of CfP and justification for recommended action/assistance for the corresponding case and write in details, answer as a paragraph not bullet points, be formal",
         "{{response_2}}":"Is the protection risk clearly articulated? Is there good reason to assume it is a one-time emergency rather than a recurrent, chronic issue? answer as a paragraph not bullet points, be formal",
-        "{{response_3}}":"Describe how cash assistance can solve or mitigate the protection risk: What is the expected protection outcome? What specific output will cash provide? How does that output contribute to the expected protection outcome? What measures are or will be in place to ensure the protection risk doesn’t reappear once the cash assistance ends? answer as a paragraph not bullet points, be formal",
-        "{{response_4}}":"Cash Panel: Has the panel weighed risks vs. benefits of the assistance? What will the impact be on the individual? Household? Community? Has enough consideration been given to the impact of cash on the specific needs, age and gender of the PoC? How will the protection outcome be achieved through case management? answer as a paragraph not bullet points, be formal"
-    }
+        "{{response_3}}":"Describe how cash assistance can solve or mitigate the protection risk: What is the expected protection outcome? What specific output will cash provide? How does that output contribute to the expected protection outcome? What measures are or will be in place to ensure the protection risk doesn’t reappear once the cash assistance ends? answer as a paragraph not bullet points, be formal"    }
     ,"Form2": {
         "Form2_part1":{
             "{{date_session}}": "Date of session",
