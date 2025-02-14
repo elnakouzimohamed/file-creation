@@ -367,24 +367,24 @@ form_data = {
             "{{explain_12}}": "Explain material needs",
             "Has there been a sudden change in income in the past 30 days?": {
                 "{{Check_83}}": "Yes",
-                "{{explain_13}}": "Explain",
+                "{{explain_13}}": "Explain what is the sudden change in income in the past 30 days",
                 "{{Check_84}}": "No",
             },
             "Do you have any health concerns?": {
-                "{{Check_85}}": "No",
-                "{{Check_86}}": "Yes",
+                "{{Check_85}}": "Yes",
+                "{{Check_86}}": "No",
+                "{{explain_14}}": "Explain what are the health concerns if exist"
             },
-            "{{explain_14}}": "Explain health concerns",
             "Do you receive any treatment or support?": {
-                "{{Check_87}}": "No",
-                "{{Check_88}}": "Yes",
+                "{{Check_87}}": "Yes",
+                "{{Check_88}}": "No",
             },
             "{{received_treatment}}": "If yes, who is providing treatment?",
             "Do you need support to take care of yourself?": {
-                "{{Check_89}}": "No",
-                "{{Check_90}}": "Yes",
+                "{{Check_89}}": "Yes",
+                "{{Check_90}}": "No",
+                "{{selfcare_support}}": "If yes, who provides this support?"
             },
-            "{{selfcare_support}}": "If yes, who provides this support?",
             "Does your household give you the support you need?": {
                 "{{Check_91}}": "Yes",
                 "{{Check_92}}": "No",
