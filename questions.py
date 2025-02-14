@@ -76,13 +76,15 @@ form_data = {
             "{{Check_46}}": "PRS",
             "{{Check_47}}": "PRL",
             "{{Check_48}}": "Stateless",
-            "{{Check_49}}": "Other, specify"
+            "{{Check_49}}": "Other",
+            "{{specify_origin}}": "specify"
         },
         "Displacement status": {
             "{{Check_50}}": "IDP",
             "{{Check_51}}": "Refugee",
             "{{Check_52}}": "Host community",
-            "{{Check_53}}": "Other, specify"
+            "{{Check_53}}": "Other",
+            "{{specify_displacement}}":"specify displacement"
         },
         "What is your civil/marital status?": {
             "{{Check_54}}": "Single",
