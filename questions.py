@@ -388,7 +388,7 @@ form_data = {
             "Does your household give you the support you need?": {
                 "{{Check_91}}": "Yes",
                 "{{Check_92}}": "No",
-                "{{explain_15}}": "Explain household support",
+                "{{explain_15}}": "Explain how your household support give you the support you need, or if not why they do not",
             },
             "Had little interest or pleasure in doing things": {
                 "{{Check_93}}": "Not at all",
