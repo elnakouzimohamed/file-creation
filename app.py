@@ -66,7 +66,8 @@ if st.button("Fill Form"):
                 st.write(len(response))
                 while(len(response)<4000):
                     st.write("Less")
-                    response = get_gemini_response("more words, I need at least 1200 words in total in your response")
+                    query = "More words please At least 1200 words.For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get(selected_form))+" and analyze the prompt carefully before answering. Make sure to fill ALL the fields especially long questions and be strict to the word limit. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file, and answer directly without writing 'Person said that he/she', and do not add any text formatting like bold or italic or anything else just a pure text. Give me the answers in the shape of a paragraph without a title or a conclusion or extra stuff. Try to elaborate your answers within the word limit (not less than 300 words), even if there is no enough data try to analyze them and be reasonable, do not write brief answers. {{response_1}} must be at least 400 words, while the others can be 350-400 words. Give me the result directly in json format with nothing written before or after!  be formal and answer as a 1 block paragraph for each and no less than 400 words for each {{response}}, so the total number of words must not be below 1200 words, add details as much as you can. Give me the result directly in json format as a string with nothing written before or after!"
+                    response = get_gemini_response(query)
                     st.write(len(response))
                 st.write(response)
                 if(response[:3]=="\"{{"):
