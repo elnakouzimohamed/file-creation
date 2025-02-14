@@ -72,7 +72,9 @@ formAnswer={
         "{{Check_60}}": "answer",
         "{{Check_61}}": "answer",
         "{{caregiver_name}}": "answer",
-        "{{caregiver_relationship}}": "answer",
+        "{{caregiver_relationship}}": "answer"
+    }
+    "Form2_part2":{
         "{{reason_of_coming}}": "answer",
         "{{Check_62}}": "answer",
         "{{needs}}": "answer",
