@@ -1,5 +1,11 @@
 formAnswer={
-    "Form2": {
+    "CFP": {
+        "{{response_1}}":"answer",
+        "{{response_2}}":"answer",
+        "{{response_3}}":"answer",
+        "{{response_4}}":"answer"
+    }
+    ,"Form2": {
         "{{date_session}}": "answer",
         "{{location}}": "answer",
         "{{Check_1}}": "answer",
