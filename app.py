@@ -73,6 +73,7 @@ word_docs = {
     "Form4": "form4.docx",
     "Form5": "form5.docx",
     "Form6": "form6.docx",
+    "CFP": "CFP.docx"
 }
 print(response)
 doc = Document(word_docs.get(selected_form))
