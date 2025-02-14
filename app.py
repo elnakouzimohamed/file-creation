@@ -6,7 +6,7 @@ from answers import formAnswer
 from questions import form_data
 import os
 
-def get_gemini_response(prompt):
+def get_gemini_response(prompt)
     model = genai.GenerativeModel("gemini-pro")
     response = model.generate_content(prompt)
     return response.text
