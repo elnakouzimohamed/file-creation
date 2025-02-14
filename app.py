@@ -68,7 +68,7 @@ if st.button("Fill Form"):
                     response="{"+response
                 if(response[-1]=='"'):
                     response=response+"}"
-                if(response[0]!='{' && response[-1]!='}'):
+                if(response[0]!='{' and response[-1]!='}'):
                     response="{"+response+"}"
     else:
         st.warning("Please enter a valid prompt!")
