@@ -8,12 +8,13 @@ form_data = {
             "{{Check_3}}": "Internal referral",
             "{{Check_4}}": "Self-referral",
             "{{Check_5}}": "Community volunteer/focal point",
-            "{{specify_id}}": "Other (specify)"
+            "{{Check_6}}": "Other than that",
+            "{{specify_id}}": "specify that other identification if known"
         },
         "{{date_id}}":"Date of identification",
         "Do you need any support to take part in this meeting?": {
-            "{{Check_7}}": "Yes",
-            "{{Check_8}}": "No"
+            "{{Check_7}}": "Yes, I need any support to take part in this meeting",
+            "{{Check_8}}": "No, I do not need any support to take part in this meeting"
         },
          "{{support_details}}":"Note down support required and what has been put in place",
         "{{case_code}}":"Case Code" ,
@@ -24,50 +25,50 @@ form_data = {
             "{{Check_11}}": "Other"
         },
         "Do you have difficulty seeing, even if wearing glasses?": {
-            "{{Check_12}}": "No, no difficulty",
-            "{{Check_13}}": "Yes, some difficulty",
-            "{{Check_14}}": "Yes, a lot of difficulty",
-            "{{Check_15}}": "Cannot do it at all",
-            "{{Check_16}}": "Refused"
+            "{{Check_12}}": "No, no difficulty seeing, or not mentioned in the prompt",
+            "{{Check_13}}": "Yes, some difficulty seeing",
+            "{{Check_14}}": "Yes, a lot of difficulty seeing",
+            "{{Check_15}}": "Cannot see at all",
+            "{{Check_16}}": "Refused to say"
         },
         "Do you have difficulty hearing, even if using a hearing aid?": {
-            "{{Check_17}}": "No, no difficulty",
+            "{{Check_17}}": "No, no difficulty, or not mentioned in the prompt",
             "{{Check_18}}": "Yes, some difficulty",
             "{{Check_19}}": "Yes, a lot of difficulty",
             "{{Check_20}}": "Cannot do it at all",
             "{{Check_21}}": "Refused"
         },
         "Do you have difficulty walking or climbing steps?": {
-            "{{Check_22}}": "No, no difficulty",
+            "{{Check_22}}": "No, no difficulty, or not mentioned in the prompt",
             "{{Check_23}}": "Yes, some difficulty",
             "{{Check_24}}": "Yes, a lot of difficulty",
             "{{Check_25}}": "Cannot do it at all",
             "{{Check_26}}": "Refused"
         },
         "Do you have difficulty remembering or concentrating?": {
-            "{{Check_27}}": "No, no difficulty",
+            "{{Check_27}}": "No, no difficulty, or not mentioned in the prompt",
             "{{Check_28}}": "Yes, some difficulty",
             "{{Check_29}}": "Yes, a lot of difficulty",
             "{{Check_30}}": "Cannot do it at all",
             "{{Check_31}}": "Refused"
         },
         "Do you have difficulty washing all over or dressing?": {
-            "{{Check_32}}": "No, no difficulty",
+            "{{Check_32}}": "No, no difficulty, or not mentioned in the prompt",
             "{{Check_33}}": "Yes, some difficulty",
             "{{Check_34}}": "Yes, a lot of difficulty",
             "{{Check_35}}": "Cannot do it at all",
             "{{Check_36}}": "Refused"
         },
         "Do you have difficulty communicating, for example understanding or being understood?": {
-            "{{Check_37}}": "No, no difficulty",
+            "{{Check_37}}": "No, no difficulty, or not mentioned in the prompt",
             "{{Check_38}}": "Yes, some difficulty",
             "{{Check_39}}": "Yes, a lot of difficulty",
             "{{Check_40}}": "Cannot do it at all",
             "{{Check_41}}": "Refused"
         },
         "Disability status (case worker only)": {
-            "{{Check_42}}": "Yes",
-            "{{Check_43}}": "No"
+            "{{Check_42}}": "Yes, I have a disability",
+            "{{Check_43}}": "No, I do not have a disability at all"
         },
         "What is your citizenship/country of origin?": {
             "{{Check_44}}": "Syrian",
