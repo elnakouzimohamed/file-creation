@@ -51,7 +51,7 @@ if st.button("Fill Form"):
                 response1 = get_gemini_response(query1)
                 response2=  get_gemini_response(query2)
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
-            # st.write(response)
+            st.write(response)
     else:
         st.warning("Please enter a valid prompt!")
 
