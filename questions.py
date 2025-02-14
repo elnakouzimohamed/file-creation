@@ -313,13 +313,13 @@ form_data = {
             },
             "{{housing_situation}}": "Comment/observation on housing situation: Observe the condition of the housing, whether there is adequate lighting and sanitation and the smell. Can all people within the household enter, circulate and use it, privacy between families, and security of tenure.",
             "Do you experience any difficulties accessing your daily food and/or water needs?": {
-                "{{Check_56}}": "Yes",
-                "{{explain_6}}": "Explain",
+                "{{Check_56}}": "Yes I have difficulties accessing your daily food and/or water needs",
+                "{{explain_6}}": "Explain how you have difficulties accessing your daily food and/or water needs",
                 "{{Check_57}}": "No"
             },
             "Do you experience any challenges hindering access to basic services?": {
                 "{{Check_58}}": "Yes",
-                "{{explain_7}}": "Explain",
+                "{{explain_7}}": "Explain how you experienced challenges hindering access to basic services",
                 "{{Check_59}}": "No"
             },
             "What type of barriers are you experiencing?": {
@@ -330,11 +330,11 @@ form_data = {
                 "{{Check_64}}": "Financial barriers",
                 "{{Check_65}}": "Service unavailable",
                 "{{check_66}}": "Other",
-                "{{explain_8}}": "Specify if other"
+                "{{explain_8}}": "Specify if other type of barriers experiencing"
             },
             "Do you currently receive any assistance from other organizations?": {
                 "{{Check_67}}": "Yes",
-                "{{explain_9}}": "Explain",
+                "{{explain_9}}": "Explain who and how you currently receiving any assistance from other organizations",
                 "{{Check_68}}": "No",
             },
             "If you receive assistance, what type is it?": {
@@ -346,8 +346,8 @@ form_data = {
                 "{{Check_74}}": "ECA",
                 "{{Check_75}}": "In-kind",
                 "{{specify_inkind}}": "If in-kind, specify",
-                "{{Check_76}}": "Other",
-                "{{specify_other}}": "If other, specify",
+                "{{Check_76}}": "Other type of assistance",
+                "{{specify_other}}": "If other, specify the other type of assistance",
             },
             "Do you/your Household have any income?": {
                 "{{Check_77}}": "Yes",
