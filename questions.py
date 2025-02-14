@@ -96,14 +96,14 @@ form_data = {
             "{{Check_58}}": "Yes",
             "{{Check_59}}": "No"
         },
-        "Please specify the reasons to not be registered in the UNHCR": "{{reasons}}",
+        "Please specify the reasons to not be registered in the UNHCR, or interpret it from the prompt": "{{reasons}}",
         "Do you have caregiver/s?": {
             "{{Check_60}}": "Yes I have caregiver/s",
             "{{Check_61}}": "No I do not have caregiver/s"
         },
         "{{caregiver_name}}":"What is the name of the caregiver/s?",
         "{{caregiver_relationship}}":"What is your relationship to them?",
-        "{{reason_of_coming}}": "Can you tell me what brought him and the reason behind giving us those information in 50 words",
+        "{{reason_of_coming}}": "Can you tell me what brought him and the reason behind giving us those information, analyze and interpret the prompt and answer in 50 words",
         "Can you explain whether you have any immediate medical, physical or emotional needs?": {
             "{{Check_62}}": "Yes",
             "{{needs}}": "Explain the needs he must have from medical to physical to emotional needs in 40 words",
