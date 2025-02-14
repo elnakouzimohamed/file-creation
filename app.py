@@ -60,6 +60,9 @@ if st.button("Fill Form"):
                 response2=  get_gemini_response(query2)
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
             # st.write(response)
+            elif(selected_form=="CFP"):
+                query = "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get(selected_form))+" and analyze the prompt carefully before answering. Make sure to fill ALL the fields especially long questions and be strict to the word limit. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file, and answer directly without writing 'Person said that he/she'. Try to elaborate your answers within the word limit even if there is no enough data try to analyze them and be reasonable, do not write brief answers. Give me the result directly in json format with nothing written before or after!"
+                response = get_gemini_response(query)
     else:
         st.warning("Please enter a valid prompt!")
 
