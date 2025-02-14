@@ -116,12 +116,12 @@ if response != "":
                 for cell in row.cells:
                     for key, value in data.items():
                         if key in cell.text:
-                            if str(value) == "false":
+                            if str(value) == "false" or str(value) == "False" or str(value) == "No" or str(value) == "no":
                                 if(str(key).startswith("{{Check")):
                                     cell.text = cell.text.replace(key, " ☐")
                                 else:
                                     cell.text = cell.text.replace(key, value)
-                            elif str(value) == "true":
+                            elif str(value) == "true" or str(value) == "True" or str(value) == "Yes" or str(value) == "yes":
                                 if(str(key).startswith("{{Check")):
                                     cell.text = cell.text.replace(key, " ☑")
                                 else:
