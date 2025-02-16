@@ -16,7 +16,7 @@ def find_missing_keys(form1, form2):
 
 genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
 
-APP_PASSWORD = "xyzabc#DRC"
+APP_PASSWORD = "mgt1988"
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
 if not st.session_state.authenticated:
