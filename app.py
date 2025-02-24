@@ -174,3 +174,100 @@ if response != "":
 
 
 
+st.title("Case Notes Filler 🤖")
+
+
+caseNoteDict = {
+    "{time1}": "answer",
+    "{first}": "answer",
+    "{time2}": "answer",
+    "{second}": "answer",
+    "{time3}": "answer",
+    "{third}": "answer",
+    "{time4}": "answer",
+    "{fourth}": "answer",
+    "{time5}": "answer",
+    "{fifth}": "answer",
+    "{time6}": "answer",
+    "{sixth}": "answer",
+    "{time7}": "answer",
+    "{seventh}": "answer",
+    "{time8}": "answer",
+    "{eighth}": "answer",
+    "{time9}": "answer",
+    "{ninth}": "answer",
+    "{time10}": "answer",
+    "{tenth}": "answer"
+}
+
+user_input2 = st.text_area("Enter:", height=250)
+caseNoteResponse = ""
+sampleAnswer = {
+    "{time1}": "30 Nov",
+    "{first}": "Phone Call (Follow-up on Assessment): This phone call was made to follow up on an earlier assessment. The objective was likely to check if the assessment results were clear or if any additional information or clarification was needed. The phone call may have involved discussing the outcomes of the assessment, addressing any concerns, and providing further details or instructions based on the findings.",
+    
+    "{time2}": "7 Dec",
+    "{second}": "Home Visit (Action Plan and Provide Awareness Session PSs): During this visit, an action plan was presented and discussed, with the aim to outline steps or recommendations for improvement or progress. The awareness session, likely focused on providing key information or instructions, was conducted. The 'PSs' might refer to 'project steps,' 'problem-solving strategies,' or specific recommendations tied to the action plan, helping the person or group to understand and implement the next steps.",
+    
+    "{time3}": "20 Dec",
+    "{third}": "Home Visit and Distribution of CRls: The visit was aimed at addressing further needs or providing updates on progress from the previous visit. 'CRls' likely refers to 'certificates of recognition,' 'checklist review logs,' or some kind of related materials being distributed. The home visit was to personally deliver these materials and ensure proper understanding of their contents.",
+    
+    "{time4}": "4 Jan",
+    "{fourth}": "Phone Call: This phone call was likely made to check in after the previous interactions, offering further support, clarification, or an update. The call could have focused on following up on any changes, challenges, or progress since the last in-person meeting or distribution of materials.",
+    
+    "{time5}": "22 Jan",
+    "{fifth}": "Phone Call and Follow-up: This call was made to follow up on ongoing matters, ensuring that previous recommendations or actions were being implemented and addressing any new developments or issues. The follow-up likely included reviewing progress, providing additional guidance if necessary, and possibly setting the stage for future steps or meetings.",
+    
+    "{time6}": "",
+    "{sixth}": "",
+    
+    "{time7}": "",
+    "{seventh}": "",
+    
+    "{time8}": "",
+    "{eighth}": "",
+    
+    "{time9}": "",
+    "{ninth}": "",
+    
+    "{time10}": "",
+    "{tenth}": ""
+}
+
+caseNote = Document("CaseNotes.docx")
+caseData = {}
+if st.button("Fill Case Note"):
+    if user_input2.strip():
+        with st.spinner("Preparing your file..."):
+            caseQuery = "For each of the following timelines " + user_input2 + "provide your own extremely detailed description and explanation of each and fill your explanation and description along with the timelines in the values of this dictionary " + json.dumps(caseNoteDict) + "by replacing the dictionary values as appropriate. Give me the dictionary directly with nothing before or after. For example, if my input is 30 Nov Phone call -follow up on assessment 7 dec home visit (action plan and provide awareness session PSs) 20 Dec home visit and distribution CRls 4 Jan phone call 22-jan phone call and follow up your detailed explanation could be "+ json.dumps(sampleAnswer) + " like this sample answer please"
+            caseNoteResponse = get_gemini_response(caseQuery)
+            print(caseNoteResponse, type(caseNoteResponse))
+            caseData = json.loads(caseNoteResponse)
+            for table in caseNote.tables:
+                for row in table.rows:
+                    for cell in row.cells:
+                        for key, value in caseData.items():
+                            if key in cell.text:
+                                if not value:
+                                    cell.text = cell.text.replace(str(key), "")
+                                else:
+                                    cell.text = cell.text.replace(str(key), str(value))
+                            
+            file_path2 = "CaseNotes_filled.docx"
+            filled2 = caseNote.save(file_path2)
+            st.write("✅ The form is successfully filled!")
+            with open(file_path2, "rb") as file:
+                btn = st.download_button(
+                label="📄 Download Filled Case NotesDocument",
+                data=file,
+                file_name=file_path2,
+                mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            )
+
+        # Delete file after download button is clicked
+        if btn:
+            os.remove(file_path2)
+
+        print("✅ The form is successfully filled and deleted after downloading!")
+    else:
+        st.warning("Please enter a valid prompt!")
