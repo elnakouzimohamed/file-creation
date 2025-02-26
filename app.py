@@ -7,15 +7,15 @@ from questions import form_data
 import os
 
 def get_gemini_response(prompt):
-    model = genai.GenerativeModel("gemini-pro")
+    model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(prompt)
     return response.text
 
 def find_missing_keys(form1, form2):
     return list(set(form1.keys()) - set(form2.keys()))
 
-#genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
-genai.configure(api_key="AIzaSyAzOjkYlJ1WtWwxM1KP5dwc-i4JHw0ukms")
+genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
+#genai.configure(api_key="AIzaSyAzOjkYlJ1WtWwxM1KP5dwc-i4JHw0ukms")
 
 APP_PASSWORD = "mgt1988"
 if "authenticated" not in st.session_state:
