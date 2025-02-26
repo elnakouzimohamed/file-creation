@@ -9,6 +9,7 @@ import os
 def get_gemini_response(prompt):
     model = genai.GenerativeModel("gemini-2.0-flash")
     response = model.generate_content(prompt)
+    print(response.text)
     return response.text
 
 def find_missing_keys(form1, form2):
