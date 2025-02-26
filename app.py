@@ -52,7 +52,8 @@ if st.button("Fill Form"):
                 if(response1[-1]=='"'):
                     response1=response1+"}"
                 response2=  get_gemini_response(query2)
-                if(response2[:3]=="\"{{"):
+                st.write(response2)
+if(response2[:3]=="\"{{"):
                     response2="{"+response2
                 if(response2[-1]=='"'):
                     response2=response2+"}"
