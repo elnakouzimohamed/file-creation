@@ -65,6 +65,8 @@ if st.button("Fill Form"):
                 query2 = "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form2_part2"))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get("Form2_part2"))+"and the answer of {{checks}} is either 'true' or 'false' only, and as a string only, if you do not know if it is 'true' or 'false' then put 'false', and analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample especially long questions and be strict to the word limit. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 100 words, no 'answer' having more than 100 words is acceptable, and answer directly without writing 'Person said that he/she'. Try to elaborate your answers within those 100 words even if there is no enough data try to analyze them and be reasonable, do not write brief answers. Give me the result directly in json format with nothing written before or after!"
                 response1 = get_gemini_response(query1)
                 response2=  get_gemini_response(query2)
+                response1= response1[8:len(response1)-4]
+                response2= response2[8:len(response2)-4]
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
                 st.write(response)
             elif(selected_form=="CFP"):
