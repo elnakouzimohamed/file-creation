@@ -105,7 +105,7 @@ data = {}
 if response != "":
     try:
         print(response[8:len(response)-4])
-        data = json.loads(response[8:len(response)-4])
+        data = json.loads(response)
         
         if(selected_form=="Form3"):
             all_key_values= formAnswer.get("Form3_part1")
