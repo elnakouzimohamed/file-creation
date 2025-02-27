@@ -95,14 +95,15 @@ word_docs = {
     "Form6": "form6.docx",
     "CFP": "CFP.docx"
 }
-print(response)
+print(response, "\n\n",type(response))
 doc = Document(word_docs.get(selected_form))
 
 data = {}
 # Dictionary of values to replace placeholders
 if response != "":
     try:
-        data = json.loads(response)
+        print(response[8:len(response)-4])
+        data = json.loads(response[8:len(response)-4])
         
         if(selected_form=="Form3"):
             all_key_values= formAnswer.get("Form3_part1")
