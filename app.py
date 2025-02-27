@@ -250,7 +250,7 @@ if st.button("Fill Case Note"):
             caseQuery = "For each of the following timelines " + user_input2 + "provide your own extremely detailed description and explanation of each and fill your explanation and description along with the timelines in the values of this dictionary " + json.dumps(caseNoteDict) + "by replacing the dictionary values as appropriate. Give me the dictionary directly with nothing before or after. For example, if my input is 30 Nov Phone call -follow up on assessment 7 dec home visit (action plan and provide awareness session PSs) 20 Dec home visit and distribution CRls 4 Jan phone call 22-jan phone call and follow up your detailed explanation could be "+ json.dumps(sampleAnswer) + " like this sample answer please"
             caseNoteResponse = get_gemini_response(caseQuery)
             print(caseNoteResponse, type(caseNoteResponse))
-            caseData = json.loads(caseNoteResponse)
+            caseData = json.loads(caseNoteResponse[8:len(caseNoteResponse)-4])
             for table in caseNote.tables:
                 for row in table.rows:
                     for cell in row.cells:
