@@ -36,7 +36,7 @@ if not st.session_state.authenticated:
     st.stop()
 
 
-st.title("Form Filler 🤖")
+st.title("Form Filler")
 selected_form = st.selectbox("Select a Form:", list(form_data.keys()), index=0)
 user_input = st.text_area("Enter The Prompt:", height=250)
 response = ""
@@ -187,8 +187,8 @@ if response != "":
 
 
 
-
-st.title("Case Notes Filler 🤖")
+st.write(" ")
+st.title("Case Notes Filler")
 
 
 caseNoteDict = {
