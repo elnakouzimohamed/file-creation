@@ -49,14 +49,14 @@ if st.button("Fill Form"):
                 query2= "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form3_part2"))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get("Form3_part2"))+". Analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA if and only if the answer can not be determined or concluded or interpreted or analyzed from the prompt, but avoid putting NA as much as possible. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 20 words, no 'answer' having more than 20 words is acceptable. Try to elaborate your answers within those 20 words even if there is no enough data try to analyze them, do not write very brief answers. Give me the result directly in json format as a 'String', with nothing written before or after!"
                 response1 = get_gemini_response(query1)
                 response1= response1[8:len(response1)-4]
-                st.write(response1)
+                
                 if(response1[:3]=="\"{{"):
                     response1="{"+response1
                 if(response1[-1]=='"'):
                     response1=response1+"}"
                 response2=  get_gemini_response(query2)
                 response2= response2[8:len(response2)-4]
-                st.write(response2)
+               
                 if(response2[:3]=="\"{{"):
                     response2="{"+response2
                 if(response2[-1]=='"'):
@@ -70,19 +70,19 @@ if st.button("Fill Form"):
                 response1= response1[8:len(response1)-4]
                 response2= response2[8:len(response2)-4]
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
-                st.write(response)
+                
             elif(selected_form=="CFP"):
                 query = "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get(selected_form))+" and analyze the prompt carefully before answering. Make sure to fill ALL the fields especially long questions and be strict to the word limit. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file, and answer directly without writing 'Person said that he/she', and do not add any text formatting like bold or italic or anything else just a pure text. Give me the answers in the shape of a paragraph without a title or a conclusion or extra stuff. Try to elaborate your answers within the word limit (not less than 300 words), even if there is no enough data try to analyze them and be reasonable, do not write brief answers. {{response_1}} must be at least 2000 characters length, while the others can be 1000-2000 characters length. Give me the result directly in json format with nothing written before or after!  be formal and answer as a 1 block paragraph for each and no less than 400 words for each {{response}}, so the total number of characters must be more than 4000 characters, add details as much as you can. Give me the result directly in json format as a string with nothing written before or after!"
                 response = get_gemini_response(query)
                 response = response[8:len(response)-4]
-                # st.write(len(response))
+                
                 while(len(response)<3700):
-                    # st.write("Less")
+                   
                     query = "More words please, at least 5000 characters. For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get(selected_form))+" and analyze the prompt carefully before answering. Make sure to fill ALL the fields especially long questions and be strict to the word limit. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file, and answer directly without writing 'Person said that he/she', and do not add any text formatting like bold or italic or anything else just a pure text. Give me the answers in the shape of a paragraph without a title or a conclusion or extra stuff. Try to elaborate your answers within the word limit (not less than 2000 characters), even if there is no enough data try to analyze them and be reasonable, do not write brief answers. {{response_1}} must be at least 2000 characters length, while the others can be 1000-2000 characters length. Give me the result directly in json format with nothing written before or after!  be formal and answer as a 1 block paragraph for each and no less than length 1500 characters for each {{response}}, so the total number of words must not be below 1200 words, add details as much as you can. Give me the result directly in json format as a string with nothing written before or after!"
                     response = get_gemini_response(query)
                     response = response[8:len(response)-4]
                     # st.write(len(response))
-                st.write(response)
+                
                 if(response[:3]=="\"{{"):
                     response="{"+response
                 if(response[-1]=='"'):
