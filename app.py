@@ -157,7 +157,7 @@ if response != "":
                                     cell.text = cell.text.replace(key, " ☑")
                                 else:
                                     cell.text = cell.text.replace(key, value)
-                            elif value in {"NA", "answer", "N/A", "null", "Null"}:
+                            elif (value=="NA" or value=="answer" or value=="N/A" or value=="null" or value=="Null" or value==""):
                                 if(str(key).startswith("{{Check")):
                                     cell.text = cell.text.replace(key, " ☐")
                                 else:
