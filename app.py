@@ -1,4 +1,4 @@
-import streamlit as st
+imp ort streamlit as st
 import google.generativeai as genai
 from docx import Document
 import json
