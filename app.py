@@ -15,7 +15,7 @@ def get_gemini_response(prompt):
 def find_missing_keys(form1, form2):
     return list(set(form1.keys()) - set(form2.keys()))
 
-gen ai.configure(api_key="AIzaSyCKfQtaNLGNvRTazcDzetjUZ15MVRFZhKs")
+genai.configure(api_key="AIzaSyCKfQtaNLGNvRTazcDzetjUZ15MVRFZhKs")
 
 #genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
 
