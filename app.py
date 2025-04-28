@@ -12,7 +12,7 @@ def get_gemini_response(prompt):
     
     return response.text
 
-def find_missing_keys(form1, form2):
+def fi nd_missing_keys(form1, form2):
     return list(set(form1.keys()) - set(form2.keys()))
 
 #genai.configure(api_key="AIzaSyCKfQtaNLGNvRTazcDzetjUZ15MVRFZhKs")
