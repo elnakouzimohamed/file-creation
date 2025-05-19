@@ -1,5 +1,5 @@
 import streamlit as st
-import google.generativeai as genai
+import google .generativeai as genai
 from docx import Document
 import json
 from answers import formAnswer
