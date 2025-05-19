@@ -136,7 +136,9 @@ if response != "":
     try:
         print(response[8:len(response)-4])
         data = json.loads(response)
-        
+        data=process_item(data)
+        st.write(data)
+        st.title("WWWWWWWWWWWWWWWWW")
         if(selected_form=="Form3"):
             all_key_values= formAnswer.get("Form3_part1")
             missing_keys = find_missing_keys(formAnswer.get("Form3_part1"), formAnswer.get("Form3_part2"))
