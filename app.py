@@ -1,4 +1,4 @@
-import streamlit as st
+import stream lit as st
 import google.generativeai as genai
 from docx import Document
 import json
@@ -8,17 +8,24 @@ import os
 
 def process_item(item):
     if isinstance(item, dict):
+        st.write("yes dictionary")
         temp_dict = {}
         for key, value in item.items():
             # If key starts with '{{', keep it and set value to 'answer'
             if key.startswith('{{'):
+                st.write(key)
                 temp_dict[key] = value
+                st.write(temp_dict[key])
             # If the value is a dictionary, process it recursively
             elif isinstance(value, dict):
+                st.write(key)
+                st.write("question")
                 processed = process_item(value)
+                st.write(processed)
                 # Add all items from processed dictionary directly to the result
                 for k, v in processed.items():
                     temp_dict[k] = v
+        st.write(temp_dict)
         return temp_dict
     return item
 
