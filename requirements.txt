@@ -1,2 +1,2 @@
-genai
+from google import genai
 python-docx
