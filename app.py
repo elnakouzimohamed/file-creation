@@ -23,7 +23,7 @@ def process_item(item):
     return item
 
 def get_gemini_response(prompt):
-    model = genai.GenerativeModel("gemini-2.0-flash-001")
+    model = genai.GenerativeModel("gemini-2.5-flash-001")
     response = model.generate_content(prompt)
     return response.text
 
