@@ -1,2 +1,2 @@
-google.generativeai
+genai
 python-docx
