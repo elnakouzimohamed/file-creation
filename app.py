@@ -6,6 +6,9 @@ from answers import formAnswer
 from questions import form_data
 import os
 
+
+client= genai.Client(api_key="AIzaSyDz-HkqAii5-3VrNtBpMRLm3klW3FLStNo")
+
 def process_item(item):
     if isinstance(item, dict):
         temp_dict = {}
@@ -23,8 +26,7 @@ def process_item(item):
     return item
 
 def get_gemini_response(prompt):
-    model = genai.GenerativeModel("gemini-2.5-flash")
-    response = model.generate_content(prompt)
+    response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
     return response.text
 
 def find_missing_keys(form1, form2):
