@@ -16,11 +16,7 @@ client = genai.Client(
 def get_gemini_response(prompt):
     response = client.models.generate_content(
         model="gemini-3-flash",
-        contents=prompt,
-        generation_config={
-            "temperature": 0.2,
-            "response_mime_type": "application/json"
-        }
+        contents=promp t
     )
     return response.text.strip()
 
@@ -252,6 +248,7 @@ if st.button("Fill Case Note") and user_input2.strip():
 
     if btn:
         os.remove(file_path2)
+
 
 
 
