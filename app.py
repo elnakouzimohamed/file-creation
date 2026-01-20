@@ -2,7 +2,7 @@ import streamlit as st
 from google import genai
 from docx import Document
 import json
-from answ ers import formAnswer
+from answers import formAnswer
 from questions import form_data
 import os
 
@@ -252,6 +252,7 @@ if st.button("Fill Case Note") and user_input2.strip():
 
     if btn:
         os.remove(file_path2)
+
 
 
 
