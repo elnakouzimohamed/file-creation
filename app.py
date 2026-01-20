@@ -10,7 +10,7 @@ import os
 # GEMINI 3 CLIENT (FREE)
 # =========================
 client = genai.Client(
-    api_key="AIzaSyCKfQtaNLGNvRTazcDzetjUZ15MVRFZhKs"
+    api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4"
 )
 
 def get_gemini_response(prompt):
@@ -248,6 +248,7 @@ if st.button("Fill Case Note") and user_input2.strip():
 
     if btn:
         os.remove(file_path2)
+
 
 
 
