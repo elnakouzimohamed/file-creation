@@ -7,7 +7,7 @@ from questions import form_data
 import os
 
 
-client= genai.Client(api_key=API_KEY)
+client= genai.Client(api_key=st.secrets["API_KEY"])
 
 def process_item(item):
     if isinstance(item, dict):
@@ -298,5 +298,6 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
