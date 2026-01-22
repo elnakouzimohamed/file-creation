@@ -32,13 +32,7 @@ def get_gemini_response(prompt):
 def find_missing_keys(form1, form2):
     return list(set(form1.keys()) - set(form2.keys()))
 
-#genai.configure(api_key="AIzaSyCKfQtaNLGNvRTazcDzetjUZ15MVRFZhKs")
-
-#genai.configure(api_key="AIzaSyArlFxEb2FUqVIQEL_T6h7IeTu1C-2axu4")
-
-#genai.configure(api_key="AIzaSyAzOjkYlJ1WtWwxM1KP5dwc-i4JHw0ukms")
-
-APP_PASSWORD = "mgt1988"
+APP_PASSWORD = st.secrets["PASS"]
 if "authenticated" not in st.session_state:
     st.session_state.authenticated = False
 if not st.session_state.authenticated:
@@ -298,6 +292,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
