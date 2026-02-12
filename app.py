@@ -1,4 +1,4 @@
-import streamlit as st
+import stre amlit as st
 from google import genai
 from docx import Document
 import json
@@ -300,6 +300,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
