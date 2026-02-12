@@ -26,7 +26,7 @@ def process_item(item):
     return item
 
 def get_gemini_response(prompt):
-    response = client.models.generate_content(model="gemini-3-flash-preview", contents=prompt)
+    response = client.models.generate_content(model="gemini-2.5-flash", contents=prompt)
     return response.text
 
 def find_missing_keys(form1, form2):
@@ -314,6 +314,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
