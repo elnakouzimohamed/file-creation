@@ -59,7 +59,7 @@ if st.button("Fill Form"):
                 query1 = "For the given prompt:"+user_input+",analyze it very well and understand it and then check these questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form3_part1"))+". I want the answers in the form of:"+json.dumps(formAnswer.get("Form3_part1"))+"and the answer of {{checks}} is either 'true' or 'false' only, and as a string only, if you do not know if it is 'true' or 'false' then put 'false', and analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA if and only if the answer can not be determined or concluded or interpreted or analyzed from the prompt, but avoid putting NA as much as possible. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 20 words, no 'answer' having more than 20 words is acceptable. Try to elaborate your answers within those 20 words even if there is no enough data try to analyze them, do not write very brief answers. Give me the result directly in json format as a 'String', with nothing written before or after! remember that the questions dictionary is not the one I want to fill, I want to fill the answers dictionary which is the 2nd one that I wrote"
                 query2= "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form3_part2"))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get("Form3_part2"))+". Analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA if and only if the answer can not be determined or concluded or interpreted or analyzed from the prompt, but avoid putting NA as much as possible. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 20 words, no 'answer' having more than 20 words is acceptable. Try to elaborate your answers within those 20 words even if there is no enough data try to analyze them, do not write very brief answers. Give me the result directly in json format as a 'String', with nothing written before or after!"
                 response1 = get_gemini_response(query1)
- 1              st.write("Processing 1")
+                st.write("Processing 1")
                 response1= response1[8:len(response1)-4]
                 ############################################
                 if(response1[:3]=="\"{{"):
@@ -310,6 +310,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
