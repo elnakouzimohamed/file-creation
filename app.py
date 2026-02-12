@@ -91,8 +91,9 @@ if st.button("Fill Form"):
                 print("______________________")
                 print(response2)
                 print("______________________")
-                #response1= response1[8:len(response1)-4]
-                #response2= response2[8:len(response2)-4]
+                if(response1[:3]=="```"):
+                    response1= response1[8:len(response1)-4]
+                    response2= response2[8:len(response2)-4]
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
                 print(response)
                 st.write("Processing 2")
@@ -314,6 +315,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
