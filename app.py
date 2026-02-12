@@ -1,4 +1,4 @@
-import stre amlit as st
+import streamlit as st
 from google import genai
 from docx import Document
 import json
@@ -59,6 +59,7 @@ if st.button("Fill Form"):
                 query1 = "For the given prompt:"+user_input+",analyze it very well and understand it and then check these questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form3_part1"))+". I want the answers in the form of:"+json.dumps(formAnswer.get("Form3_part1"))+"and the answer of {{checks}} is either 'true' or 'false' only, and as a string only, if you do not know if it is 'true' or 'false' then put 'false', and analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA if and only if the answer can not be determined or concluded or interpreted or analyzed from the prompt, but avoid putting NA as much as possible. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 20 words, no 'answer' having more than 20 words is acceptable. Try to elaborate your answers within those 20 words even if there is no enough data try to analyze them, do not write very brief answers. Give me the result directly in json format as a 'String', with nothing written before or after! remember that the questions dictionary is not the one I want to fill, I want to fill the answers dictionary which is the 2nd one that I wrote"
                 query2= "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form3_part2"))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get("Form3_part2"))+". Analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample and NEVER put a null value, put NA if and only if the answer can not be determined or concluded or interpreted or analyzed from the prompt, but avoid putting NA as much as possible. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 20 words, no 'answer' having more than 20 words is acceptable. Try to elaborate your answers within those 20 words even if there is no enough data try to analyze them, do not write very brief answers. Give me the result directly in json format as a 'String', with nothing written before or after!"
                 response1 = get_gemini_response(query1)
+ 1              st.write("Processing 1")
                 response1= response1[8:len(response1)-4]
                 ############################################
                 if(response1[:3]=="\"{{"):
@@ -67,18 +68,21 @@ if st.button("Fill Form"):
                     response1=response1+"}"
                 response2=  get_gemini_response(query2)
                 response2= response2[8:len(response2)-4]
-               
+                st.write("Processing 2")
                 if(response2[:3]=="\"{{"):
                     response2="{"+response2
                 if(response2[-1]=='"'):
                     response2=response2+"}"
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
+                st.write("Processing 3")
                 response=process_item(response)
+                st.write("Processing 4")
             elif(selected_form=="Form2"):
                 query1 = "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form2_part1"))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get(selected_form))+"and the answer of {{checks}} is either 'true' or 'false' only, and as a string only, if you do not know if it is 'true' or 'false' then put 'false', and analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample especially long questions and be strict to the word limit. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 100 words, no 'answer' having more than 100 words is acceptable, and answer directly without writing 'Person said that he/she'. Try to elaborate your answers within those 100 words even if there is no enough data try to analyze them and be reasonable, do not write brief answers. Give me the result directly in json format with nothing written before or after!"
                 query2 = "For the given prompt:"+user_input+",analyze it very well and understand it and then answer the questions of the following dictionary:"+json.dumps(form_data.get(selected_form).get("Form2_part2"))+", and fill this dictionary with the correct answers:"+json.dumps(formAnswer.get("Form2_part2"))+"and the answer of {{checks}} is either 'true' or 'false' only, and as a string only, if you do not know if it is 'true' or 'false' then put 'false', and analyze the prompt carefully before answering. Make sure to fill ALL the fields of the given sample especially long questions and be strict to the word limit. Give me the result directly in json format with nothing written before or after and DO NOT SKIP ANY ENTRY IN THE ANSWERS file or the dictionary file especially {{check_33}}, and the answers must not exceed 100 words, no 'answer' having more than 100 words is acceptable, and answer directly without writing 'Person said that he/she'. Try to elaborate your answers within those 100 words even if there is no enough data try to analyze them and be reasonable, do not write brief answers. Give me the result directly in json format with nothing written before or after! Do not write the question itself in the json file, just the placeholder:value of each placeholder in order to use them to fill a form. Don't forget the {{violation_type}} entry, it is just after {{explain_6}}"
                 response1 = get_gemini_response(query1)
                 response2=  get_gemini_response(query2)
+                st.write("Processing 1")
                 print("______________________")
                 print(response1)
                 print("______________________")
@@ -88,7 +92,9 @@ if st.button("Fill Form"):
                 response2= response2[8:len(response2)-4]
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
                 print(response)
+                st.write("Processing 2")
                 response=process_item(response)
+                st.write("Processing 3") 
                 print("_______________________")
                 print(response)
             elif(selected_form=="CFP"):
@@ -124,8 +130,12 @@ data = {}
 if response != "":
     try:
         print(response[8:len(response)-4])
+        st.write("filling 1")
+        st.write(response)
         data = json.loads(response)
+        st.write("filling 2")
         data=process_item(data)
+        st.write("filling 3")
         if(selected_form=="Form3"):
             all_key_values= formAnswer.get("Form3_part1")
             missing_keys = find_missing_keys(formAnswer.get("Form3_part1"), formAnswer.get("Form3_part2"))
@@ -155,7 +165,7 @@ if response != "":
                     data[key] = " ☐"
                 else:
                     data[key] = " "
-        
+            st.write("filling 4")
                 
         for table in doc.tables:
             for row in table.rows:
@@ -179,7 +189,7 @@ if response != "":
                                     cell.text = cell.text.replace(key, " ")
                             else:
                                 cell.text = cell.text.replace(str(key or ""), str(value or ""))
-
+        st.write("filling 5")
         file_path = f"{selected_form}_filled.docx"
         filled = doc.save(file_path)
         st.write("✅ The form is successfully filled!")
@@ -300,6 +310,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
