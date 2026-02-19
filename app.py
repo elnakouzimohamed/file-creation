@@ -80,7 +80,6 @@ if st.button("Fill Form"):
                     response2=response2+"}"
                 response = response1.rstrip('}') + ',' + response2.lstrip('{')
                 st.write("Processing 3")
-                st.write(response)
                 response=process_item(response)
                 st.write("Processing 4")
             elif(selected_form=="Form2"):
@@ -321,6 +320,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
