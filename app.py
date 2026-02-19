@@ -69,6 +69,7 @@ if st.button("Fill Form"):
                     response1="{"+response1
                 if(response1[-1]=='"'):
                     response1=response1+"}"
+                time.sleep(2)
                 response2=  get_gemini_response(query2)
                 if(response2[:3]=="```"):
                     response2= response2[8:len(response2)-4]
@@ -320,6 +321,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
