@@ -5,7 +5,7 @@ import json
 from answers import formAnswer
 from questions import form_data
 import os
-
+import time
 
 client= genai.Client(api_key=st.secrets["API_KEY_GEM2"])
 
@@ -321,6 +321,7 @@ if st.button("Fill Case Note"):
         print("✅ The form is successfully filled and deleted after downloading!")
     else:
         st.warning("Please enter a valid prompt!")
+
 
 
 
